@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
-function App() {
-  const [count, setCount] = useState(0)
+import About from './components/About';
+import Error from './components/Error';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import PartOne from './components/PartOne';
+import PartTwo from './components/PartTwo';
+import RedBlock from './components/RedBlock';
+import Stories from './components/Stories';
+import WhiteBlock from './components/WhiteBlock';
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+const router = createBrowserRouter([
+	{
+		path: '/',
+		element: (
+			<>
+				<Header />
+				<Hero />
+				<About />
+				<PartOne />
+				<Stories />
+				<PartTwo/>
+				<RedBlock/>
+				<WhiteBlock/>
+				<Footer/>
+			</>
+		),
+		errorElement: <Error />,
+	},
+]);
 
-export default App
+const App = () => {
+	return <RouterProvider router={router} />;
+};
+
+export default App;
