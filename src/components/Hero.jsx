@@ -1,13 +1,13 @@
 const Hero = () => {
 	return (
-		<section className='max-w-[1920px] bg-hero min-h-[970px] relative mb-[470px] bg-cover bg-center'>
-			<div className='max-w-[740px] py-10 text-4xl bg-white px-14 text-yellow rounded-3xl min-h-[310px] absolute right-[13%] top-[45%]'>
+		<section className='max-w-[1920px] bg-hero min-h-[1170px] relative mb-[470px] bg-cover bg-center'>
+			<div className='max-w-[740px] py-10 text-4xl bg-white px-14 text-yellow rounded-3xl min-h-[270px] absolute right-[9%] top-[51%]'>
 				<p>
 					Зв&apos;язок з тваринами надає нам можливість побачити красу
 					та розмаїття життя навколо нас
 				</p>
 			</div>
-			<div className='text-white bg-yellow px-14 py-10 max-w-[830px] rounded-3xl flex gap-10 flex-col items-center absolute right-[15%] top-[65%]'>
+			<div className='text-white bg-yellow px-14 py-10 max-w-[830px] rounded-3xl flex gap-10 flex-col items-center absolute right-[10%] top-[68%]'>
 				<h1 className='text-6xl max-w-[630px]'>
 					Зоозахисний закон: які нововведення вступають у силу
 				</h1>
@@ -21,10 +21,10 @@ const Hero = () => {
 					проблем.
 				</p>
 			</div>
-			<div className='text-6xl text-white bg-black p-7 max-w-[345px] rounded-tl-3xl rounded-tr-3xl rounded-bl-3xl absolute top-[105%] left-[12%]'>
+			<div className='text-6xl text-white bg-black p-7 max-w-[345px] rounded-tl-3xl rounded-tr-3xl rounded-bl-3xl absolute top-[102%] left-[12%]'>
 				<h1>Про нас</h1>
 			</div>
-			<div className='text-2xl bg-pink p-7 max-w-[905px] rounded-3xl absolute top-[116%] left-[18%] z-10'>
+			<div className='text-2xl bg-pink p-7 max-w-[905px] rounded-3xl absolute top-[111%] left-[18%] z-10'>
 				<p>
 					Любов до тварин - це особлива зв&apos;язок, який викликає в
 					нас найніжніші почуття. Це безмежне кохання і розуміння без
