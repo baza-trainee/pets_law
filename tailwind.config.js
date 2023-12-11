@@ -12,6 +12,7 @@ export default {
         pink: "#F2A8FF",
         blue: "#C0DCF6",
         grey: "#D9D9D9",
+        spanishGrey: "#9D9393",
         green: "#C4F6C0",
         lightBlue: "#F2FAFF",
       },
