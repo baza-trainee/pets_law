@@ -21,13 +21,13 @@ const router = createBrowserRouter([
 				<About />
 				<PartOne />
 				<Stories />
-				<PartTwo/>
-				<RedBlock/>
-				<WhiteBlock/>
-				<Footer/>
+				<PartTwo />
+				<RedBlock />
+				<WhiteBlock />
+				<Footer />
 			</>
 		),
-		errorElement: <Error />,
+		errorElement: <Error />
 	},
 ]);
 

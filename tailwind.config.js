@@ -16,6 +16,7 @@ export default {
 			},
 			backgroundImage: {
 				hero: "url('./assets/hero.webp')",
+				error: "url('./assets/error.webp')"
 			},
 		},
 	},
