@@ -1,12 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  theme: {
-    extend: {
-      fontFamily: {
-        body: ["Inter", "sans-serif"],
-      },
-      colors: {
+
+	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+	theme: {
+		extend: {
+			fontFamily: {
+				body: ['Inter', 'sans-serif'],
+			},
+			colors: {
         yellow: "#CFA615",
         black: "#181717",
         pink: "#F2A8FF",
@@ -20,6 +21,7 @@ export default {
       backgroundImage: {
         hero: "url('./assets/hero.webp')",
         important: "url('./assets/important.webp')",
+        error: "url('./assets/error.webp')",
       },
     },
   },
