@@ -5,11 +5,11 @@ import Error from './components/Error';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import Important from './components/Important';
 import PartOne from './components/PartOne';
 import PartTwo from './components/PartTwo';
 import RedBlock from './components/RedBlock';
 import Stories from './components/Stories';
-import WhiteBlock from './components/WhiteBlock';
 
 const router = createBrowserRouter([
 	{
@@ -23,7 +23,7 @@ const router = createBrowserRouter([
 				<Stories />
 				<PartTwo/>
 				<RedBlock/>
-				<WhiteBlock/>
+				<Important/>
 				<Footer/>
 			</>
 		),

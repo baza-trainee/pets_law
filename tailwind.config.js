@@ -15,9 +15,11 @@ export default {
         spanishGrey: "#9D9393",
         green: "#C4F6C0",
         lightBlue: "#F2FAFF",
+        lightgrey: '#F2F2F2'
       },
       backgroundImage: {
         hero: "url('./assets/hero.webp')",
+        important: "url('./assets/important.webp')",
       },
     },
   },
