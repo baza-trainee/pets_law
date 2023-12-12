@@ -27,7 +27,13 @@ const router = createBrowserRouter([
 				<Footer />
 			</>
 		),
-		errorElement: <Error />
+		errorElement: (
+			<>
+				<Header />
+				<Error />
+			</>
+		
+		)
 	},
 ]);
 
