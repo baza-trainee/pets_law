@@ -1,17 +1,17 @@
 const Hero = () => {
 	return (
-		<section className='max-w-[1920px] bg-hero min-h-[1170px] relative mb-[470px] bg-cover bg-center'>
-			<div className='max-w-[740px] py-10 text-4xl bg-white px-14 text-yellow rounded-3xl min-h-[270px] absolute right-[9%] top-[51%]'>
+		<section className='max-w-[1920px] lg:bg-hero lg:min-h-[1170px] relative lg:bg-cover bg-top bg-heroMob bg-cover bg-no-repeat min-h-[390px] mb-[470px] sm:mb-80 md:mb-64 lg:mb-[600px] xl:mb-[470px]'>
+			<div className='lg:max-w-[740px] lg:py-10 lg:text-4xl bg-white lg:px-14 text-yellow lg:rounded-3xl lg:min-h-[270px] absolute lg:right-[9%] lg:top-[51%] text-sm max-w-[70%] px-4 pt-3 bottom-10 pb-10 rounded-2xl right-5'>
 				<p>
 					Зв&apos;язок з тваринами надає нам можливість побачити красу
 					та розмаїття життя навколо нас
 				</p>
 			</div>
-			<div className='text-white bg-yellow px-14 py-10 max-w-[830px] rounded-3xl flex gap-10 flex-col items-center absolute right-[10%] top-[68%]'>
-				<h1 className='text-6xl max-w-[630px]'>
+			<div className='text-white bg-yellow lg:px-14 lg:py-10 max-w-[830px] lg:rounded-3xl flex gap-10 flex-col items-center absolute lg:right-[10%] lg:top-[68%] px-4 py-5 rounded-l-2xl right-0 ml-[10%] -bottom-5'>
+				<h1 className='lg:text-6xl max-w-[630px] text-xl'>
 					Зоозахисний закон: які нововведення вступають у силу
 				</h1>
-				<p className='text-2xl'>
+				<p className='hidden text-2xl lg:block'>
 					Що саме змінює цей закон? <br />
 					Які нововведення починають працювати вже сьогодні? UAnimals
 					підготували для вас коротку підбірку, яка допоможе знати
@@ -21,10 +21,10 @@ const Hero = () => {
 					проблем.
 				</p>
 			</div>
-			<div className='text-6xl text-white bg-black p-7 max-w-[345px] rounded-tl-3xl rounded-tr-3xl rounded-bl-3xl absolute top-[102%] left-[12%]'>
+			<div className='lg:text-6xl text-white bg-black lg:p-7 max-w-[345px] lg:rounded-tl-3xl lg:rounded-tr-3xl lg:rounded-bl-3xl absolute top-[102%] lg:left-[12%] text-2xl z-50 px-10 py-2 rounded-r-lg rounded-tl-lg'>
 				<h1>Про нас</h1>
 			</div>
-			<div className='text-2xl bg-pink p-7 max-w-[905px] rounded-3xl absolute top-[111%] left-[18%] z-10'>
+			<div className='lg:text-2xl bg-pink p-7 max-w-[905px] rounded-3xl absolute top-[111%] lg:left-[18%] z-10 text-sm mx-[10%]'>
 				<p>
 					Любов до тварин - це особлива зв&apos;язок, який викликає в
 					нас найніжніші почуття. Це безмежне кохання і розуміння без
