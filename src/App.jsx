@@ -11,9 +11,10 @@ import Stories from "./components/Stories";
 import WhiteBlock from "./components/WhiteBlock";
 import Important from './components/Important';
 import PartThree from './components/partThree';
+
 const router = createBrowserRouter([
 	{
-		path: "/",
+		path: '/',
 		element: (
 			<>
 				<Header />
@@ -34,7 +35,6 @@ const router = createBrowserRouter([
 				<Header />
 				<Error />
 			</>
-
 		)
 	},
 ]);
