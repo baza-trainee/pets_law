@@ -21,13 +21,28 @@ export default {
         lightBlue: "#F2FAFF",
         lightGrey: "#F2F2F2",
         darkGrey: "#EAEAEA",
+        orange: "#D0A716",
+        orangeHover: "#BF9601",
       },
       backgroundImage: {
         hero: "url('./assets/hero.webp')",
-        heroMob: "url('./assets/hero-mob.webp')",
         important: "url('./assets/important.webp')",
-        importantMob: "url('./assets/important-mob.jpg')",
         error: "url('./assets/error.webp')",
+      },
+
+      keyframes: {
+        fadeinLeft: {
+          "0%": { left: "-100%", position: "relative" },
+          "100%": { left: "0%", position: "relative" },
+        },
+        fadeinRight: {
+          "0%": { right: "-100%", position: "relative" },
+          "100%": { right: "0%", position: "relative" },
+        },
+      },
+      animation: {
+        fadeinLeft: "fadeinLeft 0.5s linear",
+        fadeinRight: "fadeinRight 0.5s linear",
       },
     },
   },
