@@ -46,11 +46,11 @@ const Footer = () => {
         <div className="flex flex-col items-end pt-[79px] gap-8">
           <button
             type="button"
-            className="w-[341px] h-[44px] p-[10px] rounded-[20px] bg-white text-xl leading-5 hover:bg-yellow focus:bg-yellow transition-all"
+            className="w-[341px] h-[44px] p-[10px] rounded-[20px] bg-white text-xl leading-5 hover:bg-yellow focus:bg-yellow duration-200 hover:shadow-[0px_4px_4px_0px_rgba(0,0,0,0.10)]"
           >
             Підтримати проєкт{" "}
           </button>
-          <p className="text-white font-normal text-xl leading-5">
+          <p className="text-white text-base leading-5">
             Розробка BazaTraineeUkraine 2023 &copy; Усі права захищені
           </p>
         </div>
