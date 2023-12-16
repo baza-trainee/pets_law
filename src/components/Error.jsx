@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 import error from './../assets/error.webp';
 
@@ -14,10 +15,10 @@ const Error = () => {
 						Вибачте, сторінка, яку ви шукаєте, недоступна
 					</span>
 					<div className='flex justify-center'>
-						<Link to='/' className='px-1 py-1 mx-1 text-xs text-white transition-all ease-linear border border-white hover:bg-white hover:text-black sm:px-5 sm:py-1 sm:mx-4 rounded-2xl'>
+						<Link to='/' className='btn btn-error'>
 							Повернутись на головну
 						</Link>
-						<button className='px-1 py-1 mx-1 text-xs text-white transition-all ease-linear border border-white hover:bg-white hover:text-black sm:px-5 sm:py-1 sm:mx-4 rounded-2xl'>
+						<button className='btn btn-error'>
 							Підтримати проєкт
 						</button>
 					</div>
