@@ -8,8 +8,8 @@ const Error = () => {
 					<h2 className="text-lg font-normal text-center text-white font-body sm:text-8xl">400</h2>
 					<span className='flex justify-center my-5 text-xs whitespace-nowrap sm:text-sm sm:my-10'>Вибачте, сторінка, яку ви шукаєте, недоступна</span>
 					<div className="flex justify-center">
-						<button className='px-1 py-1 mx-1 text-xs text-white transition-all ease-linear border border-white hover:bg-white hover:text-black sm:px-5 sm:py-1 sm:mx-4 rounded-2xl'>Повернутись на головну</button>
-						<button className='px-1 py-1 mx-1 text-xs text-white transition-all ease-linear border border-white hover:bg-white hover:text-black sm:px-5 sm:py-1 sm:mx-4 rounded-2xl'>Підтримати проєкт</button>
+						<button className='btn btn-error'>Повернутись на головну</button>
+						<button className='btn btn-error'>Підтримати проєкт</button>
 					</div>
 				</div>
 			</div>

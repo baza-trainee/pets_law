@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Important from './components/Important';
 import PartOne from './components/PartOne';
+import PartThree from './components/partThree';
 import PartTwo from './components/PartTwo';
 import RedBlock from './components/RedBlock';
 import Stories from './components/Stories';
@@ -24,6 +25,7 @@ const router = createBrowserRouter([
 				<PartTwo/>
 				<RedBlock/>
 				<Important/>
+				<PartThree />
 				<Footer/>
 			</>
 		),

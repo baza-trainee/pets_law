@@ -16,12 +16,29 @@ export default {
         spanishGrey: "#9D9393",
         green: "#C4F6C0",
         lightBlue: "#F2FAFF",
-        lightgrey: '#F2F2F2'
+        lightgrey: '#F2F2F2',
+        orange: "#D0A716",
+        orangeHover: "#BF9601"
       },
       backgroundImage: {
         hero: "url('./assets/hero.webp')",
         important: "url('./assets/important.webp')",
         error: "url('./assets/error.webp')",
+      },
+      
+      keyframes: {
+        fadeinLeft: {
+          "0%": {left: "-100%", position: "relative"},
+          "100%": {left: "0%", position: "relative"}
+        },
+        fadeinRight: {
+          "0%": {right: "-100%", position: "relative"},
+          "100%": {right: "0%", position: "relative"}
+        }
+      },
+      animation: {
+        fadeinLeft: 'fadeinLeft 0.5s linear',
+        fadeinRight: 'fadeinRight 0.5s linear'
       },
     },
   },
