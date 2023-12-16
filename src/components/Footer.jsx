@@ -54,14 +54,14 @@ const Footer = () => {
           >
             Підтримати проєкт{" "}
           </button>
-          <p className="text-white text-base leading-5">
+          <p className="text-base leading-5 text-white">
             Розробка BazaTraineeUkraine 2023 &copy; Усі права захищені
           </p>
         </div>
       </div>
 
       {/* Mobile */}
-      <div className="relative block lg:hidden w-full h-full mx-auto pt-[30px] pb-[10px] px-[20px]">
+      <div className="relative block w-full h-full mx-auto pt-[30px] pb-[10px] px-[20px] lg:hidden ">
         <div className="flex justify-between">
           <nav>
             <ul className="flex flex-col gap-[10px] w-fit mb-[19px]">

@@ -2,10 +2,6 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    screens: {
-      sm: "390px", // mobile
-      lg: "1920px", // desktop
-    },
     extend: {
       fontFamily: {
         body: ["Inter", "sans-serif"],

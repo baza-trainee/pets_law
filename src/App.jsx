@@ -10,7 +10,7 @@ import RedBlock from "./components/RedBlock";
 import Stories from "./components/Stories";
 import WhiteBlock from "./components/WhiteBlock";
 import Important from './components/Important';
-import PartThree from './components/partThree';
+import PartThree from './components/PartThree';
 
 const router = createBrowserRouter([
 	{
