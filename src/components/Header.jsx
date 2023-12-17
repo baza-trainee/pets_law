@@ -110,7 +110,9 @@ const Header = () => {
         <button className="md:hidden text-xs py-2.5 px-6 rounded-[20px] border-[1px] border-black">
           Підтримати проєкт
         </button>
-        <IconBurgerMenu className="md:hidden" />
+        <div className="md:hidden">
+          <IconBurgerMenu />
+        </div>
       </div>
     </header>
   );
