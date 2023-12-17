@@ -6,7 +6,7 @@ import { useState } from "react";
 const Footer = () => {
   const [isMenu, setMenu] = useState(false);
   return (
-    <footer className="w-screen bg-spanishGrey h-[276px] lg:h-[196px]">
+    <footer className="w-full bg-spanishGrey h-[276px] lg:h-[196px]">
       {/* Desktop */}
       <div className="hidden lg:flex h-full justify-between max-w-[1440px] mx-auto pt-[30px] pb-[10px] px-[20px]">
         <div className="relative flex items-center gap-[169px]">

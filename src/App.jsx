@@ -8,7 +8,6 @@ import PartOne from "./components/PartOne";
 import PartTwo from "./components/PartTwo";
 import RedBlock from "./components/RedBlock";
 import Stories from "./components/Stories";
-import WhiteBlock from "./components/WhiteBlock";
 import Important from './components/Important';
 import PartThree from './components/PartThree';
 
@@ -24,7 +23,6 @@ const router = createBrowserRouter([
 				<Stories />
 				<PartTwo />
 				<RedBlock />
-				<WhiteBlock />
 				<Important />
 				<PartThree />
 				<Footer />
