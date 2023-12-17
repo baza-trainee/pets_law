@@ -18,8 +18,20 @@ const Header = () => {
   const toggleMobile = () => {
     setIsOpenMobile(!isOpenMobile)
   }
+  const handleClickOutside = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setOpen(false);
+    }
+  };
   useEffect(() => {
-    isOpenMobile ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'visible'
+    isOpenMobile 
+    ? document.body.style.overflow = 'hidden' 
+    : document.body.style.overflow = 'visible'
+
+    window.addEventListener("click", handleClickOutside);
+    return () => {
+      window.removeEventListener("click", handleClickOutside);
+    };
   }, [isOpenMobile])
   return (
     <header className="sticky top-0 z-20 bg-lightBlue">
