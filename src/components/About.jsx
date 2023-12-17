@@ -1,15 +1,21 @@
+import vectorPaw from "../assets/images/about/VectorPaw.png";
+import catBackground from "../assets/images/about/catBackground.svg";
+import vectorArrow from "../assets/images/about/VectorArrow.svg";
+import vectorHeart from "../assets/images/about/VectorHeart.svg";
+
 const About = () => {
   return (
     <section className="relative block max-w-[1920px] min-h-[992px] mx-auto bg-blue">
       <div className="relative float-right bottom-0 right-0 w-[746px] h-[1040px]">
         <img
           className="z-30 2xl:-mt-[20px] xl:-mt-[5px] 2xl:mr-[50px] xl:mr-[80px] relative block float-right rotate-40 2xl:w-[287px] 2xl:h-[275px] xl:w-[260px] xl:h-[255px]"
-          src="/public/Vector_paw.png"
+          src={vectorPaw}
           alt="Paw"
         />
         <img
           className="absolute block float-right xl:w-[100%] xl:h-[100%]  xl:-mt-[48px] -z-5"
-          src="/public/cat_background.svg"
+          src={catBackground}
+          alt="Cat"
         />
         <div className="absolute block -mt-[48px] xl:h-[100%] inset-0 bg-gradient-to-l from-transparent from-60% to-blue"></div>
       </div>
@@ -55,14 +61,14 @@ const About = () => {
       <div className="absolute top-[42%] 2xl:left-[55%] xl:left-[50%] 2xl:w-[308px] 2xl:h-[149px] xl:w-[220px] xl:h-[100px]">
         <img
           className="z-30 stroke-3 stroke-lightBlue"
-          src="/public/Vector_arrow.svg"
+          src={vectorArrow}
           alt="Arrow"
         />
       </div>
       <div className="absolute w-[235px] h-[205px] 2xl:top-[23%] 2xl:left-[16.8%] xl:top-[27%] xl:left-[3%]">
         <img
           className="-rotate-11 2xl:w-[100%] 2xl:h-[100%] xl:w-[70%] xl:h-[70%] relate z-30"
-          src="/public/Vector_heart.svg"
+          src={vectorHeart}
           alt="Heart"
         />
       </div>
