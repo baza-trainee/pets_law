@@ -1,6 +1,9 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-scroll";
 import logo from "../assets/logo.svg";
+import { IconClose } from "../assets/IconClose.jsx";
+import { IconBurgerMenu } from "../assets/IconBurgerMenu.jsx";
+// import MobileMenu from "./MobileMenu";
 
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
@@ -21,12 +24,12 @@ const Header = () => {
     };
   }, []);
   return (
-    <header className="bg-lightBlue">
+    <header className="static top-0 bg-lightBlue z-100">
       <div className="flex justify-between items-center py-3.5 px-3.5 max-w-[1440px] mx-auto md:gap-4 lg:gap-0 ">
         <a href="#">
           <img className="w-11 lg:w-full" src={logo} alt="logo" />
         </a>
-        <nav className="flex items-center justify-between text-xl gap-x-5 xl:gap-x-16">
+        <nav className="items-center justify-between hidden text-xl md:flex gap-x-5 xl:gap-x-16">
           <ul className="flex items-center justify-between text-base gap-x-5 lg:text-xl xl:gap-x-16 sm:flex-wrap lg:flex-nowrap">
             <li className="duration-100 cursor-pointer hover:font-semibold">
               <Link duration={500} to="hero">
@@ -104,6 +107,10 @@ const Header = () => {
             Підтримати проєкт
           </button>
         </nav>
+        <button className="md:hidden text-xs py-2.5 px-6 rounded-[20px] border-[1px] border-black">
+          Підтримати проєкт
+        </button>
+        <IconBurgerMenu className="md:hidden" />
       </div>
     </header>
   );
