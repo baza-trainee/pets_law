@@ -16,7 +16,11 @@ export default {
         spanishGrey: "#9D9393",
         green: "#C4F6C0",
         lightBlue: "#F2FAFF",
-        lightgrey: '#F2F2F2'
+        lightGrey: "#F2F2F2",
+        darkGrey: "#EAEAEA",
+        orange: "#D0A716",
+        orangeHover: "#BF9601",
+        lightBlack: '#0A0A0A',
       },
       backgroundImage: {
         hero: "url('./assets/hero.webp')",
