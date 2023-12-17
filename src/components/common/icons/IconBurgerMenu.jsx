@@ -1,4 +1,4 @@
-export const IconBurgerMenu = () => {
+export const IconBurgerMenu = ({onClick}) => {
   return (
     <svg
       width="42"
@@ -6,24 +6,25 @@ export const IconBurgerMenu = () => {
       viewBox="0 0 42 40"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      onClick={onClick}
     >
       <path
         d="M1 10H41"
         stroke="black"
-        stroke-width="2"
-        stroke-linecap="round"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
       <path
         d="M1 20H41"
         stroke="black"
-        stroke-width="2"
-        stroke-linecap="round"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
       <path
         d="M1 30H41"
         stroke="black"
-        stroke-width="2"
-        stroke-linecap="round"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
     </svg>
   );
