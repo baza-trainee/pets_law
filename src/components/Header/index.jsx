@@ -1,11 +1,12 @@
-import { useState, useRef } from "react";
+import { useRef, useState } from "react";
 
-import logo from "/logo.svg";
-import { IconClose } from "../common/icons/IconClose.jsx";
-import { IconBurgerMenu } from "../common/icons/IconBurgerMenu.jsx";
-import { useEffect } from "react";
 import HeaderDesktop from "./HeaderDesktop";
 import HeaderMobile from "./HeaderMobile.jsx";
+import { IconBurgerMenu } from "../common/icons/IconBurgerMenu.jsx";
+import { IconClose } from "../common/icons/IconClose.jsx";
+import logo from "/logo.svg";
+import { useEffect } from "react";
+
 // import MobileMenu from "./MobileMenu";
 
 const Header = () => {
@@ -18,11 +19,23 @@ const Header = () => {
   const toggleMobile = () => {
     setIsOpenMobile(!isOpenMobile)
   }
+  const handleClickOutside = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setOpen(false);
+    }
+  };
   useEffect(() => {
-    isOpenMobile ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'visible'
+    isOpenMobile 
+    ? document.body.style.overflow = 'hidden' 
+    : document.body.style.overflow = 'visible'
+
+    window.addEventListener("click", handleClickOutside);
+    return () => {
+      window.removeEventListener("click", handleClickOutside);
+    };
   }, [isOpenMobile])
   return (
-    <header className="sticky top-0 z-20 bg-lightBlue">
+    <header className="sticky top-0 z-50 bg-lightBlue">
       <div className="flex justify-between items-center py-3.5 px-3.5 max-w-[1440px] mx-auto md:gap-4 lg:gap-0 ">
         <a href="#">
           <img className="w-11 lg:w-full" src={logo} alt="logo" />
