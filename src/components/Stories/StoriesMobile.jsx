@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import  { useState, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -26,9 +26,9 @@ const StorySlide = ({ title, image, content, link }) => (
 
 const StoriesMobile = ({ isOpenMobile }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const sliderRef = useRef();
 
   const settings = {
-    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -63,17 +63,24 @@ const StoriesMobile = ({ isOpenMobile }) => {
         />
       </Slider>
 
-      <div className="absolute top-[95%] right-[13%] z-0 mt-[10px]">
-        <div className="dots">
-          {[...Array(3).keys()].map((idx) => (
-            <button
-              key={idx}
-              onClick={() => setCurrentSlide(idx)}
-              className={"dot" + (currentSlide === idx ? " active" : "")}
-            ></button>
-          ))}
+        <div className="absolute xl:top-[66.6%]  md:right-[21%] lg:right-[21%] xl:right-[21%] z-0">
+          {sliderRef.current && (
+            <div className="dots">
+              {[...Array(sliderRef.current.props.children.length).keys()].map(
+              (idx) => {
+                return (
+                  <button
+                  key={idx}
+                  onClick={() => {
+                    sliderRef.current.slickGoTo(idx);
+                  }}
+                  className={`dot ${currentSlide === idx ? "active" : ""}`}
+                ></button>
+                );
+              })}
+            </div>
+          )}
         </div>
-      </div>
     </section>
   );
 };
