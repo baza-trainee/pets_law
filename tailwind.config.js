@@ -27,6 +27,7 @@ export default {
         important: "url('./assets/important.webp')",
         importantMob: "url('./assets/important-mob.jpg')",
         error: "url('./assets/error.webp')",
+        errorMob: "url('./assets/error-mob.webp')"
       },
 
       keyframes: {
