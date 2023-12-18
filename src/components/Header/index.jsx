@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 
 import HeaderDesktop from "./HeaderDesktop";
 import HeaderMobile from "./HeaderMobile.jsx";
@@ -7,32 +7,16 @@ import { IconClose } from "../common/icons/IconClose.jsx";
 import logo from "/logo.svg";
 import { useEffect } from "react";
 
-// import MobileMenu from "./MobileMenu";
-
 const Header = () => {
-  const [isOpen, setOpen] = useState(false);
   const [isOpenMobile, setIsOpenMobile] = useState(false)
-  const menuRef = useRef(null);
-  const toggleMenu = () => {
-    setOpen(!isOpen);
-  };
   const toggleMobile = () => {
     setIsOpenMobile(!isOpenMobile)
   }
-  const handleClickOutside = (event) => {
-    if (menuRef.current && !menuRef.current.contains(event.target)) {
-      setOpen(false);
-    }
-  };
+  
   useEffect(() => {
     isOpenMobile 
     ? document.body.style.overflow = 'hidden' 
     : document.body.style.overflow = 'visible'
-
-    window.addEventListener("click", handleClickOutside);
-    return () => {
-      window.removeEventListener("click", handleClickOutside);
-    };
   }, [isOpenMobile])
   return (
     <header className="sticky top-0 z-50 bg-lightBlue">
@@ -40,16 +24,16 @@ const Header = () => {
         <a href="#">
           <img className="w-11 lg:w-full" src={logo} alt="logo" />
         </a>
-        <HeaderDesktop menuRef={menuRef} toggleMenu={toggleMenu} isOpen={isOpen} />
+        <HeaderDesktop />
         <button className="md:hidden text-xs py-2.5 px-6 rounded-[20px] border-[1px] border-black">
           Підтримати проєкт
         </button>
-        <div className="cursor-pointer md:hidden">
+        <div onClick={toggleMobile} className="cursor-pointer md:hidden">
           {
-            isOpenMobile ? <IconClose onClick={toggleMobile} /> : <IconBurgerMenu onClick={toggleMobile} />
+            isOpenMobile ? <IconClose /> : <IconBurgerMenu />
           }
         </div>
-        <HeaderMobile isOpenMobile={isOpenMobile} isOpen={isOpen} toggleMenu={toggleMenu} />
+        <HeaderMobile isOpenMobile={isOpenMobile} />
       </div>
     </header>
   );

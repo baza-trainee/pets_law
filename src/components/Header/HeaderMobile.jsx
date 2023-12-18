@@ -1,6 +1,11 @@
+import { useState } from "react";
 import IconArrow from "../common/icons/IconArrow"
 
-const HeaderMobile = ({ isOpenMobile, isOpen, toggleMenu }) => {
+const HeaderMobile = ({ isOpenMobile }) => {
+    const [isOpen, setOpen] = useState(false);
+    const toggleDropDownMenu = () => {
+        setOpen(!isOpen)
+    }
     return (
         <>
             {
@@ -14,7 +19,7 @@ const HeaderMobile = ({ isOpenMobile, isOpen, toggleMenu }) => {
                                     </a>
                                 </li>
                                 <li className="mx-auto w-[98%] my-[30px]">
-                                    <a onClick={toggleMenu} className="btn btn-white h-[42px] ">
+                                    <a onClick={toggleDropDownMenu} className="btn btn-white h-[42px] ">
                                         Права тварин
                                         <IconArrow isOpen={isOpen} />
                                     </a>

@@ -1,4 +1,4 @@
-export const IconBurgerMenu = ({onClick}) => {
+export const IconBurgerMenu = () => {
   return (
     <svg
       width="42"
@@ -6,7 +6,6 @@ export const IconBurgerMenu = ({onClick}) => {
       viewBox="0 0 42 40"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      onClick={onClick}
     >
       <path
         d="M1 10H41"
