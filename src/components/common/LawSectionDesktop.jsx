@@ -15,7 +15,7 @@ const LawSectionDesktop = ({ children }) => {
         })
     }
     return (
-        <div className="hidden h-[500px] md:grid grid-cols-6 grid-rows-3 row-span-2 max-w-[1440px]">
+        <div className="hidden w-full mx-auto h-[500px] md:grid grid-cols-6 grid-rows-3 row-span-2 max-w-[1440px]">
             {rendrerChildren()}
         </div>
     )

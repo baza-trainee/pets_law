@@ -8,6 +8,17 @@ const LawCardDesktop = ({ title, body, image, className, isShow, onClick, id }) 
     const [position, setPosition] = useState(null);
     const [imagePosition, setImagePosition] = useState(null)
     const [width, setWidth] = useState(null);
+    const [isShowLaw, setIsShowLaw] = useState(isShow)
+    const handleOutsideClick = (e) => {
+        if(e.target !== imageRef.current) {
+            setIsShowLaw(false)
+        }
+    }
+    useEffect(()=>{
+        setIsShowLaw(isShow)
+        window.addEventListener('click', handleOutsideClick)
+        return () => window.removeEventListener('click', handleOutsideClick)
+    }, [isShow])
     useEffect(() => {
         const handleResizeWindow = () => {
             setPosition(elementRef.current.offsetLeft)
@@ -15,14 +26,15 @@ const LawCardDesktop = ({ title, body, image, className, isShow, onClick, id }) 
             setWidth(window.innerWidth)
         }
         window.addEventListener('resize', handleResizeWindow())
+       
         return () => window.removeEventListener('resize', handleResizeWindow())
     }, [elementRef])
 
     return (
         <div onClick={() => onClick(id)} ref={elementRef} className={"relative flex w-full h-full" + ' ' + className}>
-            <img ref={imageRef} className="w-[90px] h-[90px] 2xl:w-[130px] 2xl:h-[130px]" src={image} alt={title} />
+            <img ref={imageRef}  className="w-[90px] h-[90px] cursor-pointer 2xl:w-[130px] 2xl:h-[130px]" src={image} alt={title} />
             {
-                isShow
+                isShowLaw
                     ? (
                             <div className={
                                 `absolute

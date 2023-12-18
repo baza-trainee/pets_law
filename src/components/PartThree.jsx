@@ -17,7 +17,7 @@ import { useState } from "react";
 const PartThree = () => {
   const [isShowNext, setIsShowNext] = useState(false);
   return (
-    <section className="flex-col mx-2 mb-5 md:hidden">
+    <section className="flex-col mx-2 md:hidden mt-[60px] mb-[20px]">
       <h2 className="font-bold font-inter">Права тварин чатина 3</h2>
       <div className="">
         <LawCardMobile
