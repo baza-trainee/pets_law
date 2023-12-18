@@ -1,7 +1,7 @@
-import vectorPaw from "../assets/images/about/VectorPaw.png";
 import catBackground from "../assets/images/about/catBackground.svg";
 import vectorArrow from "../assets/images/about/VectorArrow.svg";
 import vectorHeart from "../assets/images/about/VectorHeart.svg";
+import vectorPaw from "../assets/images/about/VectorPaw.png";
 
 const About = () => {
   return (
@@ -28,7 +28,7 @@ const About = () => {
       </div>
       <div className="absolute bg-white max-w-[263px] min-h-[100px] rounded-[30px] top-[32%] 2xl:left-[63%] xl:left-[50%] p-5 z-40">
         <p className="text-black items-center text-[25px] not-italic font-normal font-inter leading-[30px]">
-          Ось чотири самих росповсюджених
+          Ось чотири самих розповсюджених
         </p>
       </div>
       <div className="bg-white absolute max-w-[466px] min-h-[148px] rounded-[30px] top-[37%] 2xl:left-[25%] xl:left-[10%] p-[30px] z-40">
@@ -48,7 +48,7 @@ const About = () => {
         <p className="text-black items-center text-[18px] not-italic font-normal font-inter leading-[22px]">
           3. Стимулювання розвитку почуття відповідальності - у дітей виростає
           почуття відповідальності, оскільки їм потрібно доглядати за твариною,
-          годувати її та забезпечувати потребним доглядом.
+          годувати її та забезпечувати потрібним доглядом.
         </p>
       </div>
       <div className="absolute bg-white 2xl:max-w-[828px] xl:max-w-[780px] min-h-[104px] rounded-[30px] 2xl:top-[81%] xl:top-[85%] 2xl:left-[19%] xl:left-[9%] p-[30px] z-40">

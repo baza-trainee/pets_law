@@ -23,7 +23,9 @@ export default {
       },
       backgroundImage: {
         hero: "url('./assets/hero.webp')",
+        heroMob: "url('./assets/hero-mob.webp')",
         important: "url('./assets/important.webp')",
+        importantMob: "url('./assets/important-mob.jpg')",
         error: "url('./assets/error.webp')",
       },
 
