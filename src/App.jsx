@@ -10,6 +10,7 @@ import RedBlock from "./components/RedBlock";
 import Stories from "./components/Stories";
 import Important from './components/Important';
 import PartThree from './components/PartThree';
+import PartnersSection from "./components/PartnersSection";
 
 const router = createBrowserRouter([
 	{
@@ -25,6 +26,7 @@ const router = createBrowserRouter([
 				<RedBlock />
 				<Important />
 				<PartThree />
+				<PartnersSection />
 				<Footer />
 			</>
 		),

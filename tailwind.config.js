@@ -26,6 +26,8 @@ export default {
         heroMob: "url('./assets/hero-mob.webp')",
         important: "url('./assets/important.webp')",
         importantMob: "url('./assets/important-mob.jpg')",
+        partners: "url('./assets/partners.webp')",
+        partnersMobil: "url('./assets/partners_2.webp')",
         error: "url('./assets/error.webp')",
       },
 
