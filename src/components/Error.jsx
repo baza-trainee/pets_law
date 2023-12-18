@@ -7,7 +7,7 @@ const Error = () => {
 			<div className='absolute top-0 flex items-center w-full h-full'>
 				<div className='relative flex-col items-center justify-center w-[90%] left-2 2xl:w-[40%] sm:w-[65%] md:w-[55%] lg:w-[40%] lg:left-[20px] xl:w-[35%] 2xl:left-[20px]'>
 					<h2 className='text-[32px] font-normal text-center text-white font-body sm:text-8xl'>
-						400
+						404
 					</h2>
 					<span className='flex justify-center my-5 text-xs whitespace-nowrap sm:text-sm sm:my-10'>
 						Вибачте, сторінка, яку ви шукаєте, недоступна
