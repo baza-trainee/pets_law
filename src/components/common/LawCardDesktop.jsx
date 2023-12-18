@@ -9,23 +9,16 @@ const LawCardDesktop = ({ title, body, image, className, isShow, onClick, id }) 
     const [imagePosition, setImagePosition] = useState(null)
     const [width, setWidth] = useState(null);
     const [isShowLaw, setIsShowLaw] = useState(isShow)
-    // const handleOutsideClick = (e) => {
-    //     console.log(e)
-    //         // if(e.target !== imageRef.current) {
-    //         //     setIsShowLaw(false)
-    //         // }
-    // }
-    const handleOutsideClick = (event) => {
-        console.log(event.target, imageRef.current)
-        if(event.target !== imageRef.current) {
+    const handleOutsideClick = (e) => {
+        if(e.target !== imageRef.current) {
             setIsShowLaw(false)
         }
     }
     useEffect(()=>{
-        
+        setIsShowLaw(isShow)
         window.addEventListener('click', handleOutsideClick)
         return () => window.removeEventListener('click', handleOutsideClick)
-    }, [])
+    }, [isShow])
     useEffect(() => {
         const handleResizeWindow = () => {
             setPosition(elementRef.current.offsetLeft)
