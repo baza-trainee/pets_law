@@ -1,7 +1,7 @@
 import vectorPaw from "../assets/images/about/VectorPaw.png";
 import catBackground from "../assets/images/about/catBackground.svg";
 import vectorArrow from "../assets/images/about/VectorArrow.svg";
-import vectorArrowMob from "../assets/images/about/vectorArrowMob.svg";
+import vectorArrowMob from "../assets/images/about/VectorArrowMob.svg";
 import vectorHeart from "../assets/images/about/VectorHeart.svg";
 
 const About = () => {
