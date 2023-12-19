@@ -24,9 +24,9 @@ const HeaderDesktop = () => {
 		<nav className='items-center justify-between hidden text-xl md:flex gap-x-5 xl:gap-x-16'>
 			<ul className='flex items-center justify-between text-base gap-x-2 lg:text-xl xl:gap-x-16 sm:flex-wrap lg:flex-nowrap'>
 				<li className='duration-100 cursor-pointer hover:text-gray-500'>
-					<Link duration={500} to='hero'>
+					<a href='#'>
 						Головна
-					</Link>
+					</a>
 				</li>
 				<li className='duration-100 cursor-pointer hover:text-gray-500'>
 					<Link duration={500} to='about'>
@@ -50,29 +50,29 @@ const HeaderDesktop = () => {
 							}`}
 					>
 						<li className='relative duration-100 cursor-pointer hover:text-gray-500'>
-							<Link duration={500} to='partOne'>
+							<Link duration={500} to='part_1'>
 								1 частина
 							</Link>
 						</li>
 						<li className='relative duration-100 cursor-pointer hover:text-gray-500'>
-							<Link duration={500} to='partTwo'>
+							<Link duration={500} to='part_2'>
 								2 частина
 							</Link>
 						</li>
 					</ul>
 				</li>
 				<li className='duration-100 cursor-pointer hover:text-gray-500'>
-					<Link duration={500} to='about'>
+					<Link duration={500} to='suggest'>
 						Поради
 					</Link>
 				</li>
 				<li className='duration-100 cursor-pointer hover:text-gray-500'>
-					<Link duration={500} to='about'>
+					<Link duration={500} to='partners'>
 						Партнери
 					</Link>
 				</li>
 				<li className='duration-100 cursor-pointer hover:text-gray-500'>
-					<Link duration={500} to='about'>
+					<Link duration={500} to=''>
 						Контакти
 					</Link>
 				</li>

@@ -5,19 +5,11 @@ import HeaderMobile from "./HeaderMobile.jsx";
 import { IconBurgerMenu } from "../common/icons/IconBurgerMenu.jsx";
 import { IconClose } from "../common/icons/IconClose.jsx";
 import logo from "/logo.svg";
-import { useEffect } from "react";
-
 const Header = () => {
   const [isOpenMobile, setIsOpenMobile] = useState(false)
   const toggleMobile = () => {
     setIsOpenMobile(!isOpenMobile)
   }
-  
-  useEffect(() => {
-    isOpenMobile 
-    ? document.body.style.overflow = 'hidden' 
-    : document.body.style.overflow = 'visible'
-  }, [isOpenMobile])
   return (
     <header className="sticky top-0 z-50 bg-lightBlue">
       <div className="flex justify-between items-center py-3.5 px-3.5 max-w-[1440px] mx-auto md:gap-4 lg:gap-0 ">
@@ -33,7 +25,8 @@ const Header = () => {
             isOpenMobile ? <IconClose /> : <IconBurgerMenu />
           }
         </div>
-        <HeaderMobile isOpenMobile={isOpenMobile} />
+        {isOpenMobile && <HeaderMobile toggleMobile={toggleMobile} />}
+        
       </div>
     </header>
   );

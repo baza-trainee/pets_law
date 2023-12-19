@@ -6,7 +6,7 @@ import vectorHeart from "../assets/images/about/VectorHeart.svg";
 
 const About = () => {
   return (
-    <section className="relative block mx-auto bg-blue">
+    <section id="about" className="relative block mx-auto bg-blue">
       <div className="hidden relative sm:block mx-auto max-w-[1920px] min-h-[992px]">
         {/* Desktop */}
         <div className=" relative float-right bottom-0 right-0 w-[711px] h-[992px]">
@@ -77,9 +77,9 @@ const About = () => {
             alt="Arrow"
           />
         </div>
-        <div className=" absolute xl:w-[235px] xl:h-[205px] 2xl:top-[23%] 2xl:left-[16.8%] xl:top-[27%] xl:left-[13%] md:-right-[80px] md:top-[300px] sm:-right-[120px] sm:top-[440px]">
+        <div className=" absolute overflow-hidden xl:w-[235px] xl:h-[205px] 2xl:top-[23%] 2xl:left-[16.8%] xl:top-[27%] xl:left-[13%] md:-right-[0px] md:top-[300px] sm:-right-[0px] sm:top-[440px]">
           <img
-            className=" -rotate-11 2xl:w-[100%] 2xl:h-[100%] sm:w-[70%] sm:h-[70%] relate z-9 "
+            className="relative right-[-50%] -rotate-11 2xl:w-[100%] 2xl:h-[100%] xl:right-0 sm:w-[70%] sm:h-[70%] relate z-9 "
             src={vectorHeart}
             alt="Heart"
           />

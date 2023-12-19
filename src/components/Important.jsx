@@ -1,6 +1,6 @@
 const Important = () => {
 	return (
-		<div className='max-w-[1920px] lg:bg-important min-h-[600px] lg:bg-cover flex flex-col lg:gap-10 gap-5 items-center justify-end lg:px-[240px] px-[5%] pt-[300px] lg:pt-0 bg-importantMob bg-contain bg-no-repeat bg-darkGrey bg-top mx-auto'>
+		<section id="partners" className='max-w-[1920px] lg:bg-important min-h-[600px] lg:bg-cover flex flex-col lg:gap-10 gap-5 items-center justify-end lg:px-[240px] px-[5%] pt-[300px] lg:pt-0 bg-importantMob bg-contain bg-no-repeat bg-darkGrey bg-top mx-auto'>
 			<p className='max-w-[1440px] hidden lg:block mb-28'>
 				Законопроект спрямований на впровадження європейських гуманних
 				цінностей та стандартів по відношенню до тварин та приведення
@@ -111,7 +111,7 @@ const Important = () => {
 					</div>
 				</details>
 			</div>
-		</div>
+		</section>
 	);
 };
 
