@@ -39,7 +39,6 @@ const Important = () => {
 			<div className='p-8 max-w-[1440px] self-start absolute hidden lg:block'>
 				<details
 					className='p-6 duration-300 rounded-lg open:bg-white open:ring-1 open:ring-black/5 open:shadow-lg'
-					open
 				>
 					<summary className='text-sm font-semibold leading-6 text-black cursor-pointer select-none'>
 						Директив ЄС у сфері охорони тваринного та рослинного
