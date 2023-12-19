@@ -4,16 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html,body {
-	overflow-x: hidden
-}
-
-@media screen and (max-width: 350px) {
-	html,body {
-		overflow-x: scroll;
-	}
-}
-
 @layer components {
 	.btn {
 		@apply flex justify-center items-center text-[18px] text-center px-5 py-1 transition-all ease-linear border rounded-2xl;

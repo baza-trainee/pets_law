@@ -28,11 +28,11 @@ const PartnersSection = () => {
   ];
 
   return (
-    <section>
+    <section id="partners">
       <div className="container max-w-[1920px] px-[calc(20px+(240-20)*((100vw-390px)/(1920-390)))] pb-[30px] md:pb-[0] md:h-[566px] mx-auto bg-partnersMobil md:bg-partners bg-cover bg-center my-0">
-        <div className="flex justify-center flex items-end md:items-start flex-col md:gap-[145px]">
+        <div className="flex justify-center items-end md:items-start flex-col md:gap-[145px]">
           <div className="w-full mb-[45px]">
-            <h3 className="text-[#181717] md:text-[24px] md:text-[30px] leading-normal font-bold mt-[50px] md:mt-[30px]">
+            <h3 className="text-[#181717] md:text-[24px] sm:text-[30px] leading-normal font-bold mt-[50px] md:mt-[30px]">
               Партнери
             </h3>
             <p className="block md:hidden text-[#181717] text-[16px] leading-normal mt-[10px]">

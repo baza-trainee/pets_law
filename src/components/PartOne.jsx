@@ -23,7 +23,7 @@ import LawSectionDesktop from "./common/LawSectionDesktop";
 const PartOne = () => {
   const [isShowNext, setIsShowNext] = useState(false);
   return (
-    <section className="flex-col mt-[60px] mb-[20px] mx-2">
+    <section id="part_1" className="flex-col mt-[60px] mb-[20px] mx-2">
       <h2 className="max-w-[1440px] mx-auto font-bold font-inter">Права тварин чатина 1</h2>
       <div className="md:hidden">
         <LawCardMobile
