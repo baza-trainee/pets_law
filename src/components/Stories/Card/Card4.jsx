@@ -8,7 +8,7 @@ const Card4 = () => {
           ПЕТ-ТЕРАПІЯ: ЯК ТВАРИНИ НАС ЛІКУЮТЬ
         </h4>
         <img className="w-full my-3" src={horseImage} alt="boyImage" />
-        <p className="overflow-y-scroll text-lg  h-[308px] md:h-[200px] xl:h-[150px]  xl:scrollbar-thumb-gray-700 xl:scrollbar-track-gray-300 xl:scrollbar-thumb-rounded-full xl:scrollbar-track-rounded-full">
+        <p className="overflow-y-auto text-lg  h-[308px] md:h-[200px] xl:h-[150px]  xl:scrollbar-thumb-gray-700 xl:scrollbar-track-gray-300 xl:scrollbar-thumb-rounded-full xl:scrollbar-track-rounded-full">
           У 1977 році психіатри Сем і Елізабет Корсон відкрили першу
           терапевтичну програму, яка використовувала домашніх тварин в процесі
           терапії. Ця програма існувала на базі

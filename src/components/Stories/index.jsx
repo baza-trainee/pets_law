@@ -1,10 +1,3 @@
-// import {
-//   girlImage,
-//   boyImage,
-//   dogImage,
-//   catImage,
-//   arrow,
-// } from "../../assets/images/stories";
 import Card1 from "./Card/Card1.jsx";
 import Card2 from "./Card/Card2.jsx";
 import Card3 from "./Card/Card3.jsx";
@@ -23,8 +16,6 @@ const Stories = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     lazyLoad: "ondemand",
-    // autoplay: true,
-    // autoplaySpeed: 5000,
     responsive: [
       {
         breakpoint: 1280,
@@ -61,7 +52,7 @@ const Stories = () => {
   return (
     <section className="pt-12 text-black bg-white md:bg-yellowBg">
       <div className="mx-auto max-w-[1472px] px-4 ">
-        <h3 className="mb-10 text-3xl font-bold">Історії про тварин</h3>
+        <h3 className="mb-10 ml-5 text-3xl font-bold">Історії про тварин</h3>
         <Slider {...settings}>
           <div>
             <Card1 />

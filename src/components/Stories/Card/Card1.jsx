@@ -9,7 +9,7 @@ const Card1 = () => {
           5-річного власника
         </h4>
         <img className="my-3" src={boyImage} alt="boyImage" />
-        <p className="overflow-y-scroll text-lg xl:scrollbar-w-3 h-[308px] md:h-[180px] xl:h-[150px] xl:scrollbar xl:scrollbar-thumb-gray-700 xl:scrollbar-track-gray-300 xl:scrollbar-thumb-rounded-full xl:scrollbar-track-rounded-full">
+        <p className="overflow-y-auto text-lg xl:scrollbar-w-3 h-[308px] md:h-[180px] xl:h-[150px] xl:scrollbar xl:scrollbar-thumb-gray-700 xl:scrollbar-track-gray-300 xl:scrollbar-thumb-rounded-full xl:scrollbar-track-rounded-full">
           Коли п'ятирічного Ітана оточили кілька хлопчиків, його мати, помітивши
           через вікно, як її сина штовхають на землю, прямувала до дверей, щоб
           провести розслідування. Однак, як тільки вона досягла переднього
