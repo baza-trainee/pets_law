@@ -82,9 +82,21 @@
   background-color: #F8D9C3;
   border: none;
   border-radius: 50%; 
-  margin: 0 30px; 
+  margin: 0 20px; 
   cursor: pointer;
 }
+.dot-mob {
+  width: 10px;
+  height: 10px;
+  background-color: #F8D9C3;
+  border: none;
+  border-radius: 50%; 
+  margin: 0 15px; 
+  cursor: pointer;
+}
+.dot-mob.active {
+	background-color: #FFAD00;
+  }
 .dot.active {
   background-color: #FFAD00;
 }

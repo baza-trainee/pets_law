@@ -29,7 +29,9 @@ export default {
         partners: "url('./assets/partners.webp')",
         partnersMobil: "url('./assets/partners_2.webp')",
         error: "url('./assets/error.webp')",
-        errorMob: "url('./assets/error-mob.webp')"
+        errorMob: "url('./assets/error-mob.webp')",
+        catBox: "url('/src/assets/images/stories/cat-bg.webp')",
+
       },
 
       keyframes: {
