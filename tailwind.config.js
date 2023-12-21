@@ -8,6 +8,7 @@ export default {
       },
       colors: {
         yellow: "#CFA615",
+        yellowBg: "#FFAD00",
         black: "#181717",
         pink: "#F2A8FF",
         blue: "#C0DCF6",
@@ -19,7 +20,7 @@ export default {
         darkGrey: "#EAEAEA",
         orange: "#D0A716",
         orangeHover: "#BF9601",
-        lightBlack: '#0A0A0A',
+        lightBlack: "#0A0A0A",
       },
       backgroundImage: {
         hero: "url('./assets/hero.webp')",
@@ -29,7 +30,7 @@ export default {
         partners: "url('./assets/partners.webp')",
         partnersMobil: "url('./assets/partners_2.webp')",
         error: "url('./assets/error.webp')",
-        errorMob: "url('./assets/error-mob.webp')"
+        errorMob: "url('./assets/error-mob.webp')",
       },
 
       keyframes: {
@@ -48,7 +49,5 @@ export default {
       },
     },
   },
-  plugins: [
-    require('tailwind-scrollbar')({ nocompatible: true }),
-  ],
+  plugins: [require("tailwind-scrollbar")({ nocompatible: true })],
 };
