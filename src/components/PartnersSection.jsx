@@ -2,6 +2,7 @@ import baza from "../assets/baza_trainee.webp";
 import uanimals from "../assets/uanimals.webp";
 import murrfecto from "../assets/murr_fecto.webp";
 import zdrave from "../assets/cow_protection.webp";
+import ButtonDonate from "./common/ButtonDonate";
 
 const PartnersSection = () => {
   const options = [
@@ -55,12 +56,13 @@ const PartnersSection = () => {
               </li>
             ))}
           </ul>
-          <button
+          <ButtonDonate className='w-[350px] mx-auto my-8 text-center bg-white btn-support-header-m' />
+          {/* <button
             type="button"
             className="block md:hidden bg-white w-[350px] max-w-full h-[40px] rounded-[20px] text-black cursor-pointer text-[16px] leading-normal font-normal border-[1px] border-black transition-colors duration-250 ease-in-out focus:bg-[#D0A716] hover:bg-[#D0A716] mt-[40px] mx-auto"
           >
             Підтримати проєкт
-          </button>
+          </button> */}
         </div>
       </div>
     </section>

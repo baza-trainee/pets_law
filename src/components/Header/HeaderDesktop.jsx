@@ -1,6 +1,7 @@
 import IconArrow from "../common/icons/IconArrow";
 import { Link } from "react-scroll";
 import { useEffect, useRef, useState } from "react";
+import ButtonDonate from "../common/ButtonDonate";
 
 const HeaderDesktop = () => {
   const [isOpen, setOpen] = useState(false);
@@ -77,9 +78,10 @@ const HeaderDesktop = () => {
 					</Link>
 				</li> */}
       </ul>
-      <button className="py-2.5 px-4 bg-orange rounded-[20px] duration-200 hover:shadow-[0px_4px_4px_0px_rgba(0,0,0,0.10)] hover:bg-orangeHover text-[11px] lg:text-[18px]">
+      <ButtonDonate className="btn btn-orange" />
+      {/* <button className="py-2.5 px-4 bg-orange rounded-[20px] duration-200 hover:shadow-[0px_4px_4px_0px_rgba(0,0,0,0.10)] hover:bg-orangeHover text-[11px] lg:text-[18px]">
         Підтримати проєкт
-      </button>
+      </button> */}
     </nav>
   );
 };

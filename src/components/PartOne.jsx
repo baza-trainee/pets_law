@@ -24,7 +24,7 @@ const PartOne = () => {
   const [isShowNext, setIsShowNext] = useState(false);
   return (
     <section id="part_1" className="flex-col mt-[60px] mb-[20px] mx-2">
-      <h2 className="max-w-[1440px] mx-auto font-bold font-inter">Права тварин чатина 1</h2>
+      <h2 className="max-w-[1440px] mx-auto font-bold font-inter">Права тварин чаcтина 1</h2>
       <div className="md:hidden">
         <LawCardMobile
           title="Увага!"
@@ -120,14 +120,14 @@ const PartOne = () => {
         {!isShowNext ? (
           <button
             onClick={() => setIsShowNext(true)}
-            className="btn btn-orange"
+            className="w-full btn btn-orange"
           >
             Читати далі
           </button>
         ) : (
           <button
             onClick={() => setIsShowNext(false)}
-            className="btn btn-orange"
+            className="w-full btn btn-orange"
           >
             Згорнути
           </button>

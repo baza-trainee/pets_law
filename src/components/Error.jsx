@@ -1,5 +1,6 @@
 
 import { Link } from 'react-router-dom';
+import ButtonDonate from './common/ButtonDonate';
 
 const Error = () => {
 	return (
@@ -16,9 +17,7 @@ const Error = () => {
 						<Link to='/' className='btn btn-error'>
 							Повернутись на головну
 						</Link>
-						<button className='btn btn-error'>
-							Підтримати проєкт
-						</button>
+						<ButtonDonate className='btn btn-error' />
 					</div>
 				</div>
 			</div>
