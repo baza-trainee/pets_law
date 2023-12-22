@@ -1,6 +1,7 @@
 import { useState } from "react";
 import IconArrow from "../common/icons/IconArrow";
 import { useEffect } from "react";
+import ButtonDonate from "../common/ButtonDonate";
 const HeaderMobile = ({ toggleMobile }) => {
   const [isOpen, setOpen] = useState(false);
   const toggleDropDownMenu = () => {
@@ -56,9 +57,10 @@ const HeaderMobile = ({ toggleMobile }) => {
                         </a>
                     </li> */}
 
-          <li className="mx-auto w-[98%] mt-[60px] btn btn-orange">
+          {/* <li className="mx-auto w-[98%] mt-[60px] btn btn-orange">
             Підтримати проєкт
-          </li>
+          </li> */}
+          <ButtonDonate className='w-full cursor-pointer btn btn-orange'/>
         </ul>
       </div>
     </nav>

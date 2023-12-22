@@ -1,4 +1,5 @@
 import img from "../assets/pet_harassment.png";
+import ButtonDonate from "./common/ButtonDonate";
 
 const RedBlock = () => {
   return (
@@ -50,16 +51,17 @@ const RedBlock = () => {
               102
             </span>
           </p>
-          <div className="hidden md:flex flex items-center justify-between flex-wrap gap-[5px]">
+          <div className="hidden md:flex items-center justify-start flex-wrap gap-[25px]">
             <p className="text-white text-[calc(10px+(18-10)*((100vw-390px)/(1920-390)))] leading-normal font-normal ">
               Підтримай тому що ти можеш
             </p>
-            <button
+            <ButtonDonate className='px-8 py-2 text-sm btn btn-white' />
+            {/* <button
               type="button"
               className="bg-white w-[calc(111px+(222-111)*((100vw-390px)/(1920-390)))] max-w-full h-[calc(25px+(42-25)*((100vw-390px)/(1920-390)))] rounded-[20px] text-black cursor-pointer text-[calc(10px+(18-10)*((100vw-390px)/(1920-390)))] leading-normal font-normal border-none transition-colors duration-250 ease-in-out focus:bg-[#D0A716] hover:bg-[#D0A716]"
             >
               Підтримати проєкт
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

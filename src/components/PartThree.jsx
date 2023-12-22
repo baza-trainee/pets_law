@@ -18,7 +18,7 @@ const PartThree = () => {
   const [isShowNext, setIsShowNext] = useState(false);
   return (
     <section id="part_3" className="flex-col mx-2 md:hidden mt-[60px] mb-[20px]">
-      <h2 className="font-bold font-inter">Права тварин чатина 3</h2>
+      <h2 className="font-bold font-inter">Права тварин чаcтина 3</h2>
       <div className="">
         <LawCardMobile
           title="Заборонено!"
@@ -117,14 +117,14 @@ const PartThree = () => {
         {!isShowNext ? (
           <button
             onClick={() => setIsShowNext(true)}
-            className="btn btn-orange"
+            className="w-full btn btn-orange"
           >
             Читати далі
           </button>
         ) : (
           <button
             onClick={() => setIsShowNext(false)}
-            className="btn btn-orange"
+            className="w-full btn btn-orange"
           >
             Згорнути
           </button>

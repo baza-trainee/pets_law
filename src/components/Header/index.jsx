@@ -5,6 +5,7 @@ import HeaderMobile from "./HeaderMobile.jsx";
 import { IconBurgerMenu } from "../common/icons/IconBurgerMenu.jsx";
 import { IconClose } from "../common/icons/IconClose.jsx";
 import logo from "/logo.svg";
+import ButtonDonate from "../common/ButtonDonate";
 const Header = () => {
   const [isOpenMobile, setIsOpenMobile] = useState(false)
   const toggleMobile = () => {
@@ -17,9 +18,7 @@ const Header = () => {
           <img className="w-11 lg:w-full" src={logo} alt="logo" />
         </a>
         <HeaderDesktop />
-        <button className="md:hidden text-xs py-2.5 px-6 rounded-[20px] border-[1px] border-black">
-          Підтримати проєкт
-        </button>
+        <ButtonDonate className="btn-support-header-m" />
         <div onClick={toggleMobile} className="cursor-pointer md:hidden">
           {
             isOpenMobile ? <IconClose /> : <IconBurgerMenu />
