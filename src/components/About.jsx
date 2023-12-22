@@ -77,7 +77,7 @@ const About = () => {
             alt="Arrow"
           />
         </div>
-        <div className=" absolute overflow-hidden xl:w-[235px] xl:h-[205px] 2xl:top-[23%] 2xl:left-[16.8%] xl:top-[27%] xl:left-[13%] md:-right-[0px] md:top-[300px] sm:-right-[0px] sm:top-[440px]">
+        <div className=" absolute overflow-hidden xl:w-[235px] xl:h-[205px] 2xl:top-[23%] 2xl:left-[16.8%] xl:top-[27%] xl:left-[13%] md:right-[0px] md:top-[300px] sm:right-[0px] sm:top-[440px]">
           <img
             className="relative right-[-50%] -rotate-11 2xl:w-[100%] 2xl:h-[100%] xl:right-0 sm:w-[70%] sm:h-[70%] relate z-9 "
             src={vectorHeart}
@@ -88,7 +88,7 @@ const About = () => {
 
       {/* Mobile */}
 
-      <div className="sm:hidden block w-[390px] h-[670px]">
+      <div className="sm:hidden block w-[390px] h-[670px] max-w-full">
         <div className="bg-none block z-9 w-[100%] h-[16%] px-[20px] py-[20px]">
           <p className="text-black items-center font-inter text-[14px] not-italic font-normal leading-[17px]">
             Багато людей знають, що володіння домашньою твариною може бути
@@ -152,9 +152,9 @@ const About = () => {
               нескінченної одинокості.
             </p>
           </div>
-          <div className=" absolute w-[31%] h-[19%] -right-[8%] bottom-[47%]">
+          <div className=" absolute w-[31%] h-[19%] overflow-hidden right-0 bottom-[47%]">
             <img
-              className=" w-[100%] h-[100%] stroke-3 z-9"
+              className="relative w-[100%] h-[100%] right-[-40%] stroke-3 z-9"
               src={vectorHeart}
               alt="Heart"
             />
