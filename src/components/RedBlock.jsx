@@ -4,7 +4,7 @@ import ButtonDonate from "./common/ButtonDonate";
 const RedBlock = () => {
   return (
     <section id="suggest" className="bg-[#A52630]">
-      <div className="container max-w-[1920px] mx-auto my-0 flex justify-center gap-x-[5%] px-[2%] flex-wrap">
+      <div className="container max-w-[1920px] mx-auto my-0 flex justify-center gap-x-[5%] px-[2%] flex-wrap 2xl:flex-nowrap">
         <div className="overflow-hidden flex items-center  lg:end flex-col text-center w-[calc(390px+(755-390)*((100vw-390px)/(1920-390)))] h-[calc(575px+(925-575)*((100vw-390px)/(1920-390)))]">
           <p className="block md:hidden text-[36px] pt-[20px] max-w-[350px] text-white text-center font-normal leading-normal">
             Помітили знущання над твариною?
@@ -14,7 +14,7 @@ const RedBlock = () => {
             alt="Що робити коли помітили знущання над твариною"
             width="755"
             height="910"
-            className="h-auto sm:h-full "
+            className="h-auto max-h-[900px] my-auto sm:h-full "
           />
         </div>
         <div className="my-[calc(8px+(60-8)*((100vw-390px)/(1920-390)))] ">
