@@ -19,8 +19,9 @@ import img31 from "./../assets/images/laws/partTwo/31.webp";
 import img32 from "./../assets/images/laws/partTwo/32.webp";
 import img33 from "./../assets/images/laws/partTwo/33.webp";
 import img34 from "./../assets/images/laws/partTwo/34.webp";
+import img35 from "./../assets/images/laws/partTwo/35.webp";
 import img36 from "./../assets/images/laws/partTwo/36.webp";
-import img37 from "./../assets/images/laws/partTwo/37.svg";
+
 
 import { useState } from "react";
 import LawCardDesktop from "./common/LawCardDesktop";
@@ -222,13 +223,13 @@ const PartTwo = () => {
         />
         <LawCardDesktop
           className="items-start justify-end"
-          image={img36}
+          image={img35}
           title="Увага!"
           body="Адміністративна відповідальність  за неприбирання власником тварини її екскрементів під час перебування тварини у громадському місці."
         />
         <LawCardDesktop
           className="items-start justify-end"
-          image={img37}
+          image={img36}
           title="Увага!"
           body="Жебракування з тваринами,
 					в т.ч. безпритульними."
