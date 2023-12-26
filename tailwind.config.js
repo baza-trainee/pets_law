@@ -49,5 +49,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwind-scrollbar")({ nocompatible: true })],
+  // plugins: [require("tailwind-scrollbar")({ nocompatible: true })],
 };
