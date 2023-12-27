@@ -1,5 +1,5 @@
 import IconArrow from "../common/icons/IconArrow";
-import Link  from "../../components/common/Link";
+import Link from "../../components/common/Link";
 import { useEffect, useRef, useState } from "react";
 import ButtonDonate from "../common/ButtonDonate";
 
@@ -25,7 +25,9 @@ const HeaderDesktop = () => {
     <nav className="items-center justify-between hidden text-xl md:flex gap-x-5 xl:gap-x-16">
       <ul className="flex items-center justify-between text-base gap-x-2 lg:text-xl xl:gap-x-16 sm:flex-wrap lg:flex-nowrap">
         <li className="duration-100 cursor-pointer hover:text-gray-500">
-          <a href="#">Головна</a>
+          <Link to="hero">
+            Головна
+          </Link>
         </li>
         <li className="duration-100 cursor-pointer hover:text-gray-500">
           <Link to="about">
@@ -34,9 +36,8 @@ const HeaderDesktop = () => {
         </li>
         <li className="relative" ref={menuRef}>
           <button
-            className={`cursor-pointer duration-300 hover:text-gray-500 flex items-center gap-1 xl:gap-2.5 ${
-              isOpen ? "text-stone-400" : ""
-            }`}
+            className={`cursor-pointer duration-300 hover:text-gray-500 flex items-center gap-1 xl:gap-2.5 ${isOpen ? "text-stone-400" : ""
+              }`}
             onClick={toggleDropDownMenu}
           >
             Права тварин
@@ -44,11 +45,10 @@ const HeaderDesktop = () => {
           </button>
           <ul
             className={`absolute py-2 pl-7 pr-10 whitespace-nowrap duration-500 rounded bg-lightBlue  
-                            ${
-                              isOpen
-                                ? "opacity-100 z-10 translate-y-0"
-                                : "opacity-0 pointer-events-none -translate-y-1.5"
-                            }`}
+                            ${isOpen
+                ? "opacity-100 z-10 translate-y-0"
+                : "opacity-0 pointer-events-none -translate-y-1.5"
+              }`}
           >
             <li className="relative duration-100 cursor-pointer hover:text-gray-500">
               <Link duration={500} to="part_1">

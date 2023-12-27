@@ -40,6 +40,12 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => {
+	window.addEventListener('load', ()=>{
+		setTimeout(()=>{
+			window.scrollTo(0, 0)
+		}, 0)
+		
+	})
 	return <RouterProvider router={router} />;
 };
 
