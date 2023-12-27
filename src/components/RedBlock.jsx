@@ -55,7 +55,7 @@ const RedBlock = () => {
             <p className="text-white text-[calc(10px+(18-10)*((100vw-390px)/(1920-390)))] leading-normal font-normal ">
               Підтримай тому що ти можеш
             </p>
-            <ButtonDonate className='px-8 py-2 text-sm btn btn-white' />
+            <ButtonDonate className='px-8 py-2 text-[18px] rounded-[20px] leading-[20px] btn btn-white' />
             {/* <button
               type="button"
               className="bg-white w-[calc(111px+(222-111)*((100vw-390px)/(1920-390)))] max-w-full h-[calc(25px+(42-25)*((100vw-390px)/(1920-390)))] rounded-[20px] text-black cursor-pointer text-[calc(10px+(18-10)*((100vw-390px)/(1920-390)))] leading-normal font-normal border-none transition-colors duration-250 ease-in-out focus:bg-[#D0A716] hover:bg-[#D0A716]"

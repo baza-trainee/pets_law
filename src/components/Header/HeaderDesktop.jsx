@@ -23,7 +23,7 @@ const HeaderDesktop = () => {
   }, []);
   return (
     <nav className="items-center justify-between hidden text-xl md:flex gap-x-5 xl:gap-x-16">
-      <ul className="flex items-center justify-between text-base gap-x-2 lg:text-xl xl:gap-x-16 sm:flex-wrap lg:flex-nowrap">
+      <ul className="flex items-center justify-between text-base gap-x-4 lg:text-xl xl:gap-x-16 sm:flex-wrap md:text-sm lg:flex-nowrap">
         <li className="duration-100 cursor-pointer hover:text-gray-500">
           <a href="#">Головна</a>
         </li>
@@ -51,34 +51,34 @@ const HeaderDesktop = () => {
                             }`}
           >
             <li className="relative duration-100 cursor-pointer hover:text-gray-500">
-              <Link duration={500} to="part_1">
+              <Link to="part_1">
                 1 частина
               </Link>
             </li>
             <li className="relative duration-100 cursor-pointer hover:text-gray-500">
-              <Link duration={500} to="part_2">
+              <Link to="part_2">
                 2 частина
               </Link>
             </li>
           </ul>
         </li>
         <li className="duration-100 cursor-pointer hover:text-gray-500">
-          <Link duration={500} to="suggest">
+          <Link to="suggest">
             Поради
           </Link>
         </li>
         <li className="duration-100 cursor-pointer hover:text-gray-500">
-          <Link duration={500} to="partners">
+          <Link to="partners">
             Партнери
           </Link>
         </li>
         {/* <li className='duration-100 cursor-pointer hover:text-gray-500'>
-					<Link duration={500} to=''>
+					<Link to=''>
 						Контакти
 					</Link>
 				</li> */}
       </ul>
-      <ButtonDonate className="btn btn-orange" />
+      <ButtonDonate className="btn btn-orange rounded-[20px] h-[30px] text-sm leading-[13px] md:text-[18px] md:h-[44px]  md:leading-[20px]" />
       {/* <button className="py-2.5 px-4 bg-orange rounded-[20px] duration-200 hover:shadow-[0px_4px_4px_0px_rgba(0,0,0,0.10)] hover:bg-orangeHover text-[11px] lg:text-[18px]">
         Підтримати проєкт
       </button> */}
