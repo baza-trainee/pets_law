@@ -21,15 +21,18 @@ const HeaderMobile = ({ toggleMobile }) => {
     >
       <div className=" h-full overflow w-[90%] mx-auto">
         <ul className="relative pb-[90px] mx-auto">
-          <li className="mx-auto w-[98%] my-[30px]">
-            <a onClick={toggleMobile} className="btn btn-white h-[42px]" href="#">Головна</a>
-          </li>
+          <ListItem
+            onClick={toggleMobile}
+            link="hero"
+            text="Головна"
+          />
+          
           <ListItem
             onClick={toggleMobile}
             link="about"
             text="Про нас"
           />
-          <li className="mx-auto w-[98%] my-[30px]">
+          <li className="mx-auto my-[30px]">
             <a onClick={toggleDropDownMenu} className="btn btn-white h-[42px] ">
               Права тварин
               <IconArrow isOpen={isOpen} />
@@ -59,13 +62,13 @@ const HeaderMobile = ({ toggleMobile }) => {
 
           <ListItem onClick={toggleMobile} link="partners" text="Партнери" />
 
-          {/* <li className="mx-auto w-[98%] my-[30px]">
+          {/* <li className="mx-auto my-[30px]">
                         <a className="btn btn-white h-[42px] ">
                             Контакти
                         </a>
                     </li> */}
 
-          {/* <li className="mx-auto w-[98%] mt-[60px] btn btn-orange">
+          {/* <li className="mx-auto mt-[60px] btn btn-orange">
             Підтримати проєкт
           </li> */}
           <ButtonDonate className='w-full cursor-pointer btn btn-orange' />
@@ -77,7 +80,7 @@ const HeaderMobile = ({ toggleMobile }) => {
 
 const ListItem = ({ text, link, onClick }) => {
   return (
-    <li onClick={onClick} className="mx-auto w-[98%] my-[30px]">
+    <li onClick={onClick} className="mx-auto my-[30px]">
       <Link to={link} className="btn btn-white h-[42px] ">
         {text}
       </Link>
