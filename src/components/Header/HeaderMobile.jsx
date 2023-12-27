@@ -2,6 +2,7 @@ import { useState } from "react";
 import IconArrow from "../common/icons/IconArrow";
 import { useEffect } from "react";
 import ButtonDonate from "../common/ButtonDonate";
+import Link from "../common/Link";
 const HeaderMobile = ({ toggleMobile }) => {
   const [isOpen, setOpen] = useState(false);
   const toggleDropDownMenu = () => {
@@ -20,7 +21,14 @@ const HeaderMobile = ({ toggleMobile }) => {
     >
       <div className=" h-full overflow w-[90%] mx-auto">
         <ul className="relative pb-[90px] mx-auto">
-          <ListItem onClick={toggleMobile} link="" text="Головна" />
+          <li className="mx-auto w-[98%] my-[30px]">
+            <a onClick={toggleMobile} className="btn btn-white h-[42px]" href="#">Головна</a>
+          </li>
+          <ListItem
+            onClick={toggleMobile}
+            link="about"
+            text="Про нас"
+          />
           <li className="mx-auto w-[98%] my-[30px]">
             <a onClick={toggleDropDownMenu} className="btn btn-white h-[42px] ">
               Права тварин
@@ -60,7 +68,7 @@ const HeaderMobile = ({ toggleMobile }) => {
           {/* <li className="mx-auto w-[98%] mt-[60px] btn btn-orange">
             Підтримати проєкт
           </li> */}
-          <ButtonDonate className='w-full cursor-pointer btn btn-orange'/>
+          <ButtonDonate className='w-full cursor-pointer btn btn-orange' />
         </ul>
       </div>
     </nav>
@@ -70,9 +78,9 @@ const HeaderMobile = ({ toggleMobile }) => {
 const ListItem = ({ text, link, onClick }) => {
   return (
     <li onClick={onClick} className="mx-auto w-[98%] my-[30px]">
-      <a href={`#${link}`} className="btn btn-white h-[42px] ">
+      <Link to={link} className="btn btn-white h-[42px] ">
         {text}
-      </a>
+      </Link>
     </li>
   );
 };
