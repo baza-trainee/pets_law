@@ -32,7 +32,7 @@ const About = () => {
         </div>
         <div className="absolute bg-white lg:w-[263px] lg:min-h-[10%] sm:min-h-[8%] md:w-[240px] sm:w-[220px] rounded-[30px] 2xl:top-[32%] xl:top-[20%] md:top-[12%] sm:top-[22%] 2xl:left-[63%] xl:left-[55%] sm:left-[63%] p-5 z-9">
           <p className="text-black items-center lg:text-[25px] md:text-[22px] sm:text-[20px] not-italic font-normal font-inter lg:leading-[30px] sm:leading-[25px]">
-            Ось чотири самих росповсюджених
+            Ось чотири самих розповсюджених
           </p>
         </div>
         <div className="bg-white absolute xl:max-w-[24%] sm:max-w-[50%] sm:min-h-[7%] rounded-[30px] top-[34%] 2xl:left-[25%] xl:left-[20%]  sm:left-[7%] xl:p-[30px] sm:p-[15px] z-9">
@@ -53,7 +53,7 @@ const About = () => {
           <p className="text-black items-center xl:text-[18px] md:text-[16px] sm:text-[14px] not-italic font-normal font-inter leading-[22px]">
             3. Стимулювання розвитку почуття відповідальності - у дітей виростає
             почуття відповідальності, оскільки їм потрібно доглядати за
-            твариною, годувати її та забезпечувати потребним доглядом.
+            твариною, годувати її та забезпечувати потрібним доглядом.
           </p>
         </div>
         <div className="absolute bg-white 2xl:max-w-[43%] sm:max-w-[50%] min-h-[10%] rounded-[30px] 2xl:top-[81%] sm:top-[84%] 2xl:left-[19%] sm:left-[7%] xl:p-[30px] sm:p-[15px] z-9">
@@ -107,7 +107,7 @@ const About = () => {
           </div>
           <div className="absolute bg-white w-[38%] h-[10%] rounded-[10px] top-[18%] left-[58%] p-2.5 z-9">
             <p className="text-black items-center text-[14px] not-italic font-normal font-inter leading-[17px]">
-              Ось чотири самих росповсюджених
+              Ось чотири самих розповсюджених
             </p>
           </div>
           <div className="absolute w-[40%] h-[15%] top-[17%] left-[18%]">
@@ -141,7 +141,7 @@ const About = () => {
             <div className=" bg-white w-[44%] relative h-auto rounded-r-[10px] py-[10px] pl-[20px] -top-[10px] z-1">
               <p className="text-black items-center text-[10px] not-italic font-normal font-inter leading-3">
                 оскільки їм потрібно доглядати за твариною, годувати її та
-                забезпечувати потребним доглядом.
+                забезпечувати потрібним доглядом.
               </p>
             </div>
           </div>
