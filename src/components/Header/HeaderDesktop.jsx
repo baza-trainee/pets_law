@@ -1,5 +1,5 @@
 import IconArrow from "../common/icons/IconArrow";
-import { Link } from "react-scroll";
+import Link  from "../../components/common/Link";
 import { useEffect, useRef, useState } from "react";
 import ButtonDonate from "../common/ButtonDonate";
 
@@ -28,7 +28,7 @@ const HeaderDesktop = () => {
           <a href="#">Головна</a>
         </li>
         <li className="duration-100 cursor-pointer hover:text-gray-500">
-          <Link duration={500} to="about">
+          <Link to="about">
             Про нас
           </Link>
         </li>
