@@ -1,11 +1,11 @@
-import img from "../assets/pet_harassment.png";
+import img from "../assets/suggest.webp";
 import ButtonDonate from "./common/ButtonDonate";
 
 const RedBlock = () => {
   return (
-    <section id="suggest" className="bg-[#A52630]">
-      <div className="container max-w-[1920px] mx-auto my-0 flex justify-center gap-x-[5%] px-[2%] flex-wrap 2xl:flex-nowrap">
-        <div className="overflow-hidden flex items-center  lg:end flex-col text-center w-[calc(390px+(755-390)*((100vw-390px)/(1920-390)))] h-[calc(575px+(925-575)*((100vw-390px)/(1920-390)))]">
+    <section id="suggest" className="bg-[#aa0113]">
+      <div className="relative container max-w-[1920px] mx-auto my-0 flex justify-center md:justify-end px-[2%] flex-wrap 2xl:flex-nowrap">
+        <div className="top-0 bottom-0 z-0 flex flex-col items-center w-full h-full px-4 overflow-hidden text-center md:absolute">
           <p className="block md:hidden text-[36px] pt-[20px] max-w-[350px] text-white text-center font-normal leading-normal">
             Помітили знущання над твариною?
           </p>
@@ -13,11 +13,11 @@ const RedBlock = () => {
             src={img}
             alt="Що робити коли помітили знущання над твариною"
             width="755"
-            height="910"
-            className="h-auto max-h-[900px] my-auto sm:h-full "
+            height="950"
+            className="object-cover left-[40px] w-[385px] h-[400px] object-[-50px,10px] my-0 md:absolute md:bottom-0 md:h-full md:w-full"
           />
         </div>
-        <div className="my-[calc(8px+(60-8)*((100vw-390px)/(1920-390)))] ">
+        <div className="z-10 my-[calc(8px+(60-8)*((100vw-390px)/(1920-390)))] ">
           <h3 className="hidden md:block text-white text-[calc(25px+(40-25)*((100vw-390px)/(1920-390)))] leading-normal max-w-[calc(350px+(589-350)*((100vw-390px)/(1920-390)))] mx-auto  text-center font-normal mb-[calc(8px+(60-8)*((100vw-390px)/(1920-390)))]">
             Що робити коли помітили знущання над твариною
           </h3>
