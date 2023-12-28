@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -25,6 +26,7 @@ export default {
       backgroundImage: {
         hero: "url('./assets/hero.webp')",
         heroMob: "url('./assets/hero-mob.webp')",
+        suggest: "url('./assets/suggest.webp')",
         important: "url('./assets/important.webp')",
         importantMob: "url('./assets/important-mob.jpg')",
         partners: "url('./assets/partners.webp')",
@@ -49,5 +51,7 @@ export default {
       },
     },
   },
-  // plugins: [require("tailwind-scrollbar")({ nocompatible: true })],
+  plugins: [
+    require("tailwind-scrollbar")({ nocompatible: true })
+  ],
 };
