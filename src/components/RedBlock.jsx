@@ -4,8 +4,8 @@ import ButtonDonate from "./common/ButtonDonate";
 const RedBlock = () => {
   return (
     <section id="suggest" className="bg-[#aa0113]">
-      <div className="relative container max-w-[1920px] mx-auto my-0 flex justify-center md:justify-end px-[2%] flex-wrap 2xl:flex-nowrap">
-        <div className="top-0 bottom-0 z-0 flex flex-col items-center w-full h-full px-4 overflow-hidden text-center md:absolute">
+      <div className="relative container max-w-[1920px] mx-auto my-0 flex justify-center md:justify-center lg:justify-end px-[2%] flex-wrap 2xl:flex-nowrap">
+        <div className="top-0 bottom-0 z-0 flex flex-col items-center w-full h-full px-4 overflow-hidden text-center lg:absolute xl:w-full xl:h-full">
           <p className="block md:hidden text-[36px] pt-[20px] max-w-[350px] text-white text-center font-normal leading-normal">
             Помітили знущання над твариною?
           </p>
@@ -14,10 +14,10 @@ const RedBlock = () => {
             alt="Що робити коли помітили знущання над твариною"
             width="755"
             height="950"
-            className="object-cover left-[40px] w-[385px] h-[400px] object-[-50px,10px] my-0 md:absolute md:bottom-0 md:h-full md:w-full"
+            className="object-cover left-[40px] w-[385px] h-[400px] object-[-50px,10px] my-0 lg:absolute lg:bottom-0 lg:h-full lg:w-full"
           />
         </div>
-        <div className="z-10 my-[calc(8px+(60-8)*((100vw-390px)/(1920-390)))] ">
+        <div className="z-10 my-[calc(8px+(60-8)*((100vw-390px)/(1920-390)))]">
           <h3 className="hidden md:block text-white text-[calc(25px+(40-25)*((100vw-390px)/(1920-390)))] leading-normal max-w-[calc(350px+(589-350)*((100vw-390px)/(1920-390)))] mx-auto  text-center font-normal mb-[calc(8px+(60-8)*((100vw-390px)/(1920-390)))]">
             Що робити коли помітили знущання над твариною
           </h3>
