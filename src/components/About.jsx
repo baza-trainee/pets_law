@@ -1,5 +1,4 @@
 import vectorPaw from "../assets/images/about/VectorPaw.png";
-import catBackground from "../assets/images/about/catBackground.svg";
 import vectorArrow from "../assets/images/about/VectorArrow.svg";
 import vectorArrowMob from "../assets/images/about/VectorArrowMob.svg";
 import vectorHeart from "../assets/images/about/VectorHeart.svg";
@@ -7,7 +6,7 @@ import vectorHeart from "../assets/images/about/VectorHeart.svg";
 const About = () => {
   return (
     <section id="about" className="relative block mx-auto bg-blue">
-      <div className="hidden relative sm:block mx-auto max-w-[1920px] min-h-[992px]">
+      <div className="hidden relative md:block mx-auto max-w-[1920px] min-h-[992px] bg-about bg-cover md:position_right_80 lg:bg-right">
         {/* Desktop */}
         <div className=" relative float-right bottom-0 right-0 w-[711px] h-[992px]">
           <img
@@ -15,12 +14,7 @@ const About = () => {
             src={vectorPaw}
             alt="Paw"
           />
-          <img
-            className="absolute block lg:w-[100%] lg:h-[100%] md:w-[80%] md:h-[80%] sm:w-[68%] sm:h-[68%] bottom-0 right-0"
-            src={catBackground}
-            alt="Cat"
-          />
-          <div className="hidden lg:block absolute lg:h-[100%] md:h-[70%] inset-0 bg-gradient-to-l from-transparent from-60% to-blue"></div>
+          <div className="hidden lg:block absolute lg:h-[100%] md:h-[70%] inset-0"></div>
         </div>
         <div className="sm:bg-none absolute z-9 lg:w-[40%] md:w-[50%] sm:w-[85%] block md:bg-white lg:min-h-[16%] rounded-[30px] px-[30px] py-[20px] 2xl:top-[9%] sm:top-[5%] 2xl:left-[31%] sm:left-[7%]">
           <p className="text-black items-center font-inter 2xl:text-[25px] md:text-[22px] sm:text-[20px] not-italic font-normal 2xl:leading-[30px] sm:leading-[25px] ">
@@ -88,7 +82,7 @@ const About = () => {
 
       {/* Mobile */}
 
-      <div className="sm:hidden block w-[390px] h-[670px] max-w-full">
+      <div className="md:hidden block w-full h-[670px] max-w-full bg-about bg-cover bg-no-repeat position_right_90 position_bottom_75px">
         <div className="bg-none block z-9 w-[100%] h-[16%] px-[20px] py-[20px]">
           <p className="text-black items-center font-inter text-[14px] not-italic font-normal leading-[17px]">
             Багато людей знають, що володіння домашньою твариною може бути
@@ -99,11 +93,6 @@ const About = () => {
         </div>
         <div className="bg-none block w-[100%] h-[72%] z-20">
           <div className="absolute bottom-0 right-0 w-[390px] h-[546px]">
-            <img
-              className="absolute block w-[100%] h-[100%]"
-              src={catBackground}
-              alt="Cat"
-            />
           </div>
           <div className="absolute bg-white w-[38%] h-[10%] rounded-[10px] top-[18%] left-[58%] p-2.5 z-9">
             <p className="text-black items-center text-[14px] not-italic font-normal font-inter leading-[17px]">

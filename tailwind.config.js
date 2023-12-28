@@ -33,6 +33,7 @@ export default {
         partnersMobil: "url('./assets/partners_2.webp')",
         error: "url('./assets/error.webp')",
         errorMob: "url('./assets/error-mob.webp')",
+        about: "url('./assets/about.webp')",
       },
 
       keyframes: {
