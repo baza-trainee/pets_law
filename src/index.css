@@ -58,16 +58,26 @@ html,body{
     background-position: 0% 10%;
   }
 
-  .position_right_80 {
-    background-position: 80%;
+  .position_right_40 {
+    background-position: 40%;
   }
+  
   .position_right_60 {
     background-position: 60%;
   }
 
-  .position_right_40 {
-    background-position: 40%;
+  .position_right_80 {
+    background-position: 80%;
   }
+
+  .position_right_90 {
+    background-position: 90%;
+  }
+
+  .position_bottom_75px {
+    background-position-y: 75px;
+  }
+
   .position_right_20 {
     background-position: 20%;
   }
