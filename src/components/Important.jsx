@@ -38,13 +38,13 @@ const Important = () => {
 					протягом 10 років – якщо особа вчинила злочин проти тварини.
 				</li>
 			</ul>
-			<div className='p-8 max-w-[1440px] self-start absolute hidden lg:block left-1/2 transform -translate-x-1/2 w-full'>
+			<div className='p-8 max-w-[1440px] self-start absolute hidden lg:block left-1/2 transform -translate-x-1/2 w-full z-10'>
 				<details className='p-6 duration-300 rounded-lg open:bg-white open:ring-1 open:ring-black/5 open:shadow-lg'>
 					<summary className='text-sm font-semibold leading-6 text-black cursor-pointer select-none'>
 						Директив ЄС у сфері охорони тваринного та рослинного
 						світу
 					</summary>
-					<div className='mt-3 text-sm leading-6'>
+					<div className='py-8 text-sm leading-6 px-9'>
 						<p>
 							Законопроект спрямований на впровадження
 							європейських гуманних цінностей та стандартів по
