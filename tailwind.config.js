@@ -34,6 +34,7 @@ export default {
         error: "url('./assets/error.webp')",
         errorMob: "url('./assets/error-mob.webp')",
         about: "url('./assets/about.webp')",
+        story: "url('./assets/story.webp')"
       },
 
       keyframes: {

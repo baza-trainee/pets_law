@@ -140,7 +140,7 @@ html,body{
 .slick-slider .slick-dots li {
   margin: 0 0.5rem;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   .slick-slider .slick-dots {
     bottom: -51%;
     right: 20%;
