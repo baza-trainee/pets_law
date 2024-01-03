@@ -159,6 +159,6 @@ html,body{
 }
 @media screen and (min-width: 1280px) {
   .slick-slider .slick-dots {
-    bottom: -75%;
+    bottom: -65%;
   }
 }
