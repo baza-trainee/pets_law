@@ -8,9 +8,18 @@ const HeaderMobile = ({ toggleMobile }) => {
   const toggleDropDownMenu = () => {
     setOpen(!isOpen);
   };
+  const handleAsideClick = (e) => {
+    console.log(e.currentTarget, e.target)
+    if(e.target === e.currentTarget || e.target === e.currentTarget.firstChild){
+      toggleMobile()
+    }
+  }
   useEffect(() => {
+    const mobileMenu = document.getElementById('mobile_menu')
     document.body.style.overflow = "hidden";
+    mobileMenu.addEventListener('click', handleAsideClick)
     return () => {
+      mobileMenu.removeEventListener('click', handleAsideClick)
       document.body.style.overflow = "visible";
     };
   }, []);
@@ -61,16 +70,7 @@ const HeaderMobile = ({ toggleMobile }) => {
           <ListItem onClick={toggleMobile} link="suggest" text="Поради" />
 
           <ListItem onClick={toggleMobile} link="partners" text="Партнери" />
-
-          {/* <li className="mx-auto my-[30px]">
-                        <a className="btn btn-white h-[42px] ">
-                            Контакти
-                        </a>
-                    </li> */}
-
-          {/* <li className="mx-auto mt-[60px] btn btn-orange">
-            Підтримати проєкт
-          </li> */}
+          
           <ButtonDonate className='w-full cursor-pointer btn btn-orange' />
         </ul>
       </div>
@@ -80,7 +80,7 @@ const HeaderMobile = ({ toggleMobile }) => {
 
 const ListItem = ({ text, link, onClick }) => {
   return (
-    <li onClick={onClick} className="mx-auto my-[30px]">
+    <li onClick={onClick} id="nav-list-item" className="mx-auto my-[30px]">
       <Link to={link} className="btn btn-white h-[42px] ">
         {text}
       </Link>
