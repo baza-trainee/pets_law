@@ -22,7 +22,7 @@ const Stories = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          infinite: true,
+          infinite: false,
           dots: true,
           variableWidth: true,
         },
@@ -32,7 +32,7 @@ const Stories = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          infinite: true,
+          infinite: false,
           dots: true,
           variableWidth: true,
         },
@@ -42,6 +42,7 @@ const Stories = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          infinite: false,
           variableWidth: true,
         },
       },
