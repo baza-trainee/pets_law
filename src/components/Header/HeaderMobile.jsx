@@ -9,7 +9,6 @@ const HeaderMobile = ({ toggleMobile }) => {
     setOpen(!isOpen);
   };
   const handleAsideClick = (e) => {
-    console.log(e.currentTarget, e.target)
     if(e.target === e.currentTarget || e.target === e.currentTarget.firstChild){
       toggleMobile()
     }
