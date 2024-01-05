@@ -1,24 +1,24 @@
 import LawCardMobile from "./common/LawCardMobile";
-import img25 from "./../assets/images/laws/partTwo/25.webp";
-import img26 from "./../assets/images/laws/partTwo/26.webp";
-import img27 from "./../assets/images/laws/partTwo/27.webp";
-import img28 from "./../assets/images/laws/partTwo/28.webp";
-import img29 from "./../assets/images/laws/partTwo/29.webp";
-import img30 from "./../assets/images/laws/partTwo/30.webp";
-import img31 from "./../assets/images/laws/partTwo/31.webp";
-import img32 from "./../assets/images/laws/partTwo/32.webp";
-import img33 from "./../assets/images/laws/partTwo/33.webp";
-import img34 from "./../assets/images/laws/partTwo/34.webp";
-import img36 from "./../assets/images/laws/partTwo/36.webp";
-import img37 from "./../assets/images/laws/partTwo/37.svg";
-
+import img25 from "./../assets/images/laws/25.webp";
+import img26 from "./../assets/images/laws/26.webp";
+import img27 from "./../assets/images/laws/27.webp";
+import img28 from "./../assets/images/laws/28.webp";
+import img29 from "./../assets/images/laws/29.webp";
+import img30 from "./../assets/images/laws/30.webp";
+import img31 from "./../assets/images/laws/31.webp";
+import img32 from "./../assets/images/laws/32.webp";
+import img33 from "./../assets/images/laws/33.webp";
+import img34 from "./../assets/images/laws/34.webp";
+import img35 from "./../assets/images/laws/35.webp";
+import img36 from "./../assets/images/laws/36.webp";
+import titleMob from "./../assets/images/laws/title3-mob.svg";
 import { useState } from "react";
 
 const PartThree = () => {
   const [isShowNext, setIsShowNext] = useState(false);
   return (
     <section id="part_3" className="flex-col mx-2 md:hidden mt-[60px] mb-[20px]">
-      <h2 className="font-bold font-inter">Права тварин чаcтина 3</h2>
+      <img className="block md:hidden w-full" src={titleMob} alt="Права тварин" />
       <div className="">
         <LawCardMobile
           title="Заборонено!"
@@ -102,14 +102,14 @@ const PartThree = () => {
               title="Увага!"
               body="Адміністративна відповідальність  за неприбирання власником тварини її екскрементів під час перебування тварини у громадському місці.
 								"
-              image={img36}
+              image={img35}
               reverse={false}
             />
             <LawCardMobile
               title="Заборонено!"
               body="Жебракування з тваринами,
 								в т.ч. безпритульними."
-              image={img37}
+              image={img36}
               reverse={true}
             />
           </>

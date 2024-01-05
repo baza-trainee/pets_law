@@ -1,27 +1,28 @@
 import LawCardMobile from "./common/LawCardMobile";
-import img15 from "./../assets/images/laws/partOne/15.webp";
-import img16 from "./../assets/images/laws/partOne/16.webp";
-import img17 from "./../assets/images/laws/partOne/17.webp";
-import img18 from "./../assets/images/laws/partOne/18.webp";
-import img19 from "./../assets/images/laws/partOne/19.webp";
-import img20 from "./../assets/images/laws/partTwo/20.webp";
-import img21 from "./../assets/images/laws/partTwo/21.webp";
-import img22 from "./../assets/images/laws/partTwo/22.webp";
-import img23 from "./../assets/images/laws/partTwo/23.webp";
-import img24 from "./../assets/images/laws/partTwo/24.webp";
-import img25 from "./../assets/images/laws/partTwo/25.webp";
-import img26 from "./../assets/images/laws/partTwo/26.webp";
-import img27 from "./../assets/images/laws/partTwo/27.webp";
-import img28 from "./../assets/images/laws/partTwo/28.webp";
-import img29 from "./../assets/images/laws/partTwo/29.webp";
-import img30 from "./../assets/images/laws/partTwo/30.webp";
-import img31 from "./../assets/images/laws/partTwo/31.webp";
-import img32 from "./../assets/images/laws/partTwo/32.webp";
-import img33 from "./../assets/images/laws/partTwo/33.webp";
-import img34 from "./../assets/images/laws/partTwo/34.webp";
-import img35 from "./../assets/images/laws/partTwo/35.webp";
-import img36 from "./../assets/images/laws/partTwo/36.webp";
-
+import img15 from "./../assets/images/laws/15.webp";
+import img16 from "./../assets/images/laws/16.webp";
+import img17 from "./../assets/images/laws/17.webp";
+import img18 from "./../assets/images/laws/18.webp";
+import img19 from "./../assets/images/laws/19.webp";
+import img20 from "./../assets/images/laws/20.webp";
+import img21 from "./../assets/images/laws/21.webp";
+import img22 from "./../assets/images/laws/22.webp";
+import img23 from "./../assets/images/laws/23.webp";
+import img24 from "./../assets/images/laws/24.webp";
+import img25 from "./../assets/images/laws/25.webp";
+import img26 from "./../assets/images/laws/26.webp";
+import img27 from "./../assets/images/laws/27.webp";
+import img28 from "./../assets/images/laws/28.webp";
+import img29 from "./../assets/images/laws/29.webp";
+import img30 from "./../assets/images/laws/30.webp";
+import img31 from "./../assets/images/laws/31.webp";
+import img32 from "./../assets/images/laws/32.webp";
+import img33 from "./../assets/images/laws/33.webp";
+import img34 from "./../assets/images/laws/34.webp";
+import img35 from "./../assets/images/laws/35.webp";
+import img36 from "./../assets/images/laws/36.webp";
+import title from "./../assets/images/laws/title2.svg";
+import titleMob from "./../assets/images/laws/title2-mob.svg";
 
 import { useState } from "react";
 import LawCardDesktop from "./common/LawCardDesktop";
@@ -30,8 +31,9 @@ import LawSectionDesktop from "./common/LawSectionDesktop";
 const PartTwo = () => {
   const [isShowNext, setIsShowNext] = useState(false);
   return (
-    <section id="part_2" className="flex-col mx-2 mt-[60px] mb-[20px]">
-      <h2 className="max-w-[1440px] mx-auto font-bold font-inter">Права тварин чаcтина 2</h2>
+    <section id="part_2" className="relative flex-col mx-2 mt-[60px] xl:mt-[180px] mb-[20px]">
+      <img className="hidden md:block absolute left-[-30px]  lg:left-[0px] top-[-20px] w-[300px] h-[100px] xl:top-[-110px] xl:left-[-100px] xl:w-auto xl:h-auto 2xl:left-[0px]" src={title} alt="Права тварин" />
+      <img className="block md:hidden w-full" src={titleMob} alt="Права тварин" />
       <div className="md:hidden">
         <LawCardMobile
           title="Увага!"

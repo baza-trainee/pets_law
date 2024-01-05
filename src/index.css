@@ -28,6 +28,28 @@ html,body{
   .btn-border-black {
     @apply border border-black;
   }
+  .svg-path-left, .svg-path-right, .svg-path-top, .svg-path-bottom {
+    transition: .3s linear
+  }
+  .svg-bounce:hover .svg-path-left {
+    @apply animate-svgBounceLeft;
+    transform: translateX(-20px);
+  }
+
+  .svg-bounce:hover .svg-path-right {
+    @apply animate-svgBounceRight;
+    transform: translateX(20px);
+  }
+
+  .svg-bounce:hover .svg-path-top {
+    @apply animate-svgBounceTop;
+    transform: translateY(-20px);
+  }
+
+  .svg-bounce:hover .svg-path-bottom {
+    @apply animate-svgBounceBottom;
+    transform: translateY(20px);
+  }
 
   .overflow {
     overflow: auto;

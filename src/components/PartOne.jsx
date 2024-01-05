@@ -1,30 +1,34 @@
 import LawCardMobile from "./common/LawCardMobile";
-import img1 from "./../assets/images/laws/partOne/1.webp";
-import img2 from "./../assets/images/laws/partOne/2.webp";
-import img3 from "./../assets/images/laws/partOne/3.webp";
-import img4 from "./../assets/images/laws/partOne/4.webp";
-import img5 from "./../assets/images/laws/partOne/5.webp";
-import img6 from "./../assets/images/laws/partOne/6.webp";
-import img7 from "./../assets/images/laws/partOne/7.webp";
-import img8 from "./../assets/images/laws/partOne/8.webp";
-import img9 from "./../assets/images/laws/partOne/9.webp";
-import img10 from "./../assets/images/laws/partOne/10.webp";
-import img11 from "./../assets/images/laws/partOne/11.webp";
-import img12 from "./../assets/images/laws/partOne/12.webp";
-import img13 from "./../assets/images/laws/partOne/13.webp";
-import img14 from "./../assets/images/laws/partOne/14.webp";
-import img15 from "./../assets/images/laws/partOne/15.webp";
-import img16 from "./../assets/images/laws/partOne/16.webp";
-import img17 from "./../assets/images/laws/partOne/17.webp";
-import img18 from "./../assets/images/laws/partOne/18.webp";
+import img1 from "./../assets/images/laws/1.webp";
+import img2 from "./../assets/images/laws/2.webp";
+import img3 from "./../assets/images/laws/3.webp";
+import img4 from "./../assets/images/laws/4.webp";
+import img5 from "./../assets/images/laws/5.webp";
+import img6 from "./../assets/images/laws/6.webp";
+import img7 from "./../assets/images/laws/7.webp";
+import img8 from "./../assets/images/laws/8.webp";
+import img9 from "./../assets/images/laws/9.webp";
+import img10 from "./../assets/images/laws/10.webp";
+import img11 from "./../assets/images/laws/11.webp";
+import img12 from "./../assets/images/laws/12.webp";
+import img13 from "./../assets/images/laws/13.webp";
+import img14 from "./../assets/images/laws/14.webp";
+import img15 from "./../assets/images/laws/15.webp";
+import img16 from "./../assets/images/laws/16.webp";
+import img17 from "./../assets/images/laws/17.webp";
+import img18 from "./../assets/images/laws/18.webp";
+import title from "./../assets/images/laws/title1.svg";
+import titleMob from "./../assets/images/laws/title1-mob.svg";
 import { useState } from "react";
-import LawCardDesktop from "./common/LawCardDesktop";
+// import LawCardDesktop from "./common/LawCardDesktop";
 import LawSectionDesktop from "./common/LawSectionDesktop";
+import LawCardDesktop from "./common/LawCardDesktop";
 const PartOne = () => {
   const [isShowNext, setIsShowNext] = useState(false);
   return (
-    <section id="part_1" className="flex-col mt-[60px] mb-[20px] mx-2">
-      <h2 className="max-w-[1440px] mx-auto font-bold font-inter">Права тварин чаcтина 1</h2>
+    <section id="part_1" className="relative flex-col mt-[60px] xl:mt-[120px] mb-[20px] mx-2">
+      <img className="hidden md:block absolute left-[-30px]  lg:left-[0px] top-[-20px] w-[300px] h-[100px] xl:top-[-110px] xl:left-[-100px] xl:w-auto xl:h-auto 2xl:left-[0px]" src={title} alt="Права тварин" />
+      <img className="block md:hidden w-full" src={titleMob} alt="Права тварин" />
       <div className="md:hidden">
         <LawCardMobile
           title="Увага!"

@@ -11,13 +11,12 @@ const LawDesctopTextWidget = ({elementRef, imageRef, title, body}) => {
         }
         handleResizeWindow()
         window.addEventListener('resize', handleResizeWindow)
-        
         return () => window.removeEventListener('resize', handleResizeWindow)
     }, [elementRef, imageRef, position, width])
     return (
         <div className={
             `absolute
-            z-10
+            z-20
             flex flex-col justify-start 
           bg-blue px-5 py-5 
             w-max-[500px] w-[300px] 
