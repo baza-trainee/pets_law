@@ -7,7 +7,7 @@ import ButtonDonate from "./common/ButtonDonate";
 const Footer = () => {
   const [isMenu, setMenu] = useState(false);
   return (
-    <footer className="w-full bg-spanishGrey h-[276px] lg:h-[196px]">
+    <footer className="w-full bg-spanishGrey h-[276px] lg:h-max">
       {/* Desktop */}
       <div className="hidden lg:flex h-full justify-between max-w-[1440px] mx-auto pt-[30px] pb-[10px] px-[20px]">
         <div className="relative flex items-center gap-[169px]">
@@ -16,18 +16,18 @@ const Footer = () => {
           </a>
 
           <nav>
-            <ul className="flex flex-col gap-[10px] w-fit">
-              <li className="w-fit text-white font-extralight text-[14px] leading-[16px] cursor-pointer transition-all duration-[300ms] hover:text-black">
+            <ul className="flex flex-col gap-[7px] w-fit">
+              <li className="w-fit text-white font-extralight text-[20px] leading-[20px] cursor-pointer transition-all duration-[300ms] hover:text-black">
                 <Link to="hero">
                   Головна
                 </Link>
               </li>
-              <li className="w-fit text-white font-extralight text-[14px] leading-[16px] cursor-pointer transition-all duration-[300ms] hover:text-black">
+              <li className="w-fit text-white font-extralight text-[20px] leading-[20px] cursor-pointer transition-all duration-[300ms] hover:text-black">
                 <Link to="about">
                   Про нас
                 </Link>
               </li>
-              <li className="text-white font-extralight text-[14px] leading-[16px] cursor-pointer">
+              <li className="text-white font-extralight text-[20px] leading-[20px] cursor-pointer">
                 <button
                   onClick={() => {
                     setMenu(!isMenu);
@@ -40,6 +40,7 @@ const Footer = () => {
                     className="mf-[8px]"
                     style={{
                       transform: isMenu ? "rotate(180deg)" : "rotate(0deg)",
+                      marginTop: '4px'
                     }}
                   />
                 </button>
@@ -54,7 +55,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="part_1"
-                      className="block w-fit text-white font-extralight text-[14px] leading-[16px] cursor-pointer hover:text-black"
+                      className="block w-fit text-white font-extralight text-[20px] leading-[20px] cursor-pointer hover:text-black"
                     >
                       Частина 1
                     </Link>
@@ -62,24 +63,24 @@ const Footer = () => {
                   <li>
                     <Link
                       to="part_2"
-                      className="block w-fit text-white font-extralight text-[14px] leading-[16px] cursor-pointer hover:text-black"
+                      className="block w-fit text-white font-extralight text-[20px] leading-[20px] cursor-pointer hover:text-black"
                     >
                       Частина 2
                     </Link>
                   </li>
                 </ul>
               </li>
-              <li className="w-fit text-white font-extralight text-[14px] leading-[16px] cursor-pointer transition-all duration-[300ms] hover:text-black">
+              <li className="w-fit text-white font-extralight text-[20px] leading-[20px] cursor-pointer transition-all duration-[300ms] hover:text-black">
                 <Link to="suggest">
                   Поради
                 </Link>
               </li>
-              <li className="w-fit text-white font-extralight text-[14px] leading-[16px] cursor-pointer transition-all duration-[300ms] hover:text-black">
+              <li className="w-fit text-white font-extralight text-[20px] leading-[20px] cursor-pointer transition-all duration-[300ms] hover:text-black">
                 <Link to="partners">
                   Партнери
                 </Link>
               </li>
-              {/* <li className="w-fit text-white font-extralight text-[14px] leading-[16px] cursor-pointer">
+              {/* <li className="w-fit text-white font-extralight text-[20px] leading-[20px] cursor-pointer">
                 <Link duration={500} to="">
                   Контакти
                 </Link>
@@ -89,8 +90,8 @@ const Footer = () => {
         </div>
         <div className="flex flex-col items-end pt-[48px] pb-[36px]">
 
-        <ButtonDonate className="text-center w-[341px] h-[44px] p-[10px] mb-[20px] rounded-[20px] bg-white text-[20px] leading-[16px] hover:bg-yellow focus:bg-yellow duration-200 hover:shadow-[0px_4px_4px_0px_rgba(0,0,0,0.10)] cursor-pointer"/>
-          <p className="leading-5 text-white text-body">
+        <ButtonDonate className="text-center w-[341px] h-[44px] p-[10px] mb-[20px] rounded-[20px] bg-white text-[20px] leading-[21px] hover:bg-yellow focus:bg-yellow duration-200 hover:shadow-[0px_4px_4px_0px_rgba(0,0,0,0.10)] cursor-pointer"/>
+          <p className="leading-5 text-[20px] text-white text-body">
             Розробка BazaTraineeUkraine 2023 &copy; Усі права захищені
           </p>
         </div>
@@ -127,6 +128,7 @@ const Footer = () => {
                     className="mf-[8px]"
                     style={{
                       transform: isMenu ? "rotate(180deg)" : "rotate(0deg)",
+                      marginTop: '4px'
                     }}
                   />
                 </button>
