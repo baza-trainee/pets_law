@@ -7,8 +7,9 @@ const Link = ({children, to, className}) => {
    }, [to])
    const handleScroll = () => {
     const elementOffSetTop = scrollElement.getBoundingClientRect().top
+    const elementMargin = parseInt(getComputedStyle(scrollElement, null).marginTop)
     window.scrollTo({
-        top: elementOffSetTop + window.pageYOffset - 100,
+        top: elementOffSetTop + window.pageYOffset - elementMargin - 100,
         behavior: 'smooth'
     })
 }
