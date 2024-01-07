@@ -43,16 +43,31 @@ const PartnersSection = () => {
           <ul className="flex flex-col md:flex-row gap-[calc(10px+(60-10)*((100vw-390px)/(1920-390)))]  justify-center text-[#000] text-[calc(16px+(18-16)*((100vw-390px)/(1920-390)))] leading-normal font-normal ">
             {options.map(({ img, title, link }) => (
               <li key={title} className="text-center">
-                <img
-                  src={img}
-                  alt="Сайт партнера baza-trainee.tech"
-                  width="150"
-                  height="150"
-                  className=" w-[calc(100px+(150-100)*((100vw-390px)/(1920-390)))] mx-auto mb-[20px]"
-                />
-                <a href={link} target="_blank" rel="noreferrer" title={title}>
-                  {title}
+                <a href={link} className="partner-group" target="blank">
+                  <span className="circle mb-[20px]">
+                    <img
+                      src={img}
+                      alt="Сайт партнера baza-trainee.tech"
+                      width="150"
+                      height="150"
+                      className="z-10"
+                    />
+                    {/* <div className="w-[130px] h-[130px] bg-black rounded-[100%] z-10"></div> */}
+                    <div className="borders">
+                      <span>
+                        <em></em>
+                      </span>
+
+                      <span>
+                        <em></em>
+                      </span>
+                    </div>
+                  </span>
+                  <span className="partners-text-target">
+                    {title}
+                  </span>
                 </a>
+
               </li>
             ))}
           </ul>
