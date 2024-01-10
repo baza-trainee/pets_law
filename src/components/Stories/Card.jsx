@@ -14,7 +14,7 @@ const Card = ({ title, body, image, link }) => {
                     link
                         ? (
                             <div className="flex justify-end gap-3 mt-3">
-                                <a href={link} className="">
+                                <a href={link} target="blank" className="">
                                     Перейти на сайт
                                 </a>
                                 <img src={arrow} alt="Arrow" />

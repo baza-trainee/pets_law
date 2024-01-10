@@ -33,12 +33,12 @@ const PartTwo = () => {
   return (
     <section id="part_2" className="relative flex-col mx-2 mt-[60px] xl:mt-[180px] mb-[20px]">
       <img className="hidden md:block absolute left-[-30px]  lg:left-[0px] top-[-20px] w-[300px] h-[100px] xl:top-[-110px] xl:left-[-100px] xl:w-auto xl:h-auto 2xl:left-[0px]" src={title} alt="Права тварин" />
-      <img className="block md:hidden w-full" src={titleMob} alt="Права тварин" />
+      <img className="block w-full md:hidden" src={titleMob} alt="Права тварин" />
       <div className="md:hidden">
         <LawCardMobile
-          title="Увага!"
+          title="Заборонено!"
           body="Насильницькі дії стосовно тварин, спрямовані на задоволення статевої пристрасті 
-					стало злочином, а не адмін правопорушенням."
+					стало злочином, а не адмінправопорушенням."
           image={img15}
           reverse={false}
         />
@@ -51,7 +51,7 @@ const PartTwo = () => {
         />
         <LawCardMobile
           title="Увага!"
-          body="Адміністративна відповідальність  осіб за жорстоке поводження з тваринами, порушення правил утримання собак та котів  що спричинили заподіяння шкоди здоров'ю людини або її майну – з 16 років."
+          body="Адміністративна відповідальність осіб за жорстоке поводження з тваринами, порушення правил утримання собак та котів  що спричинили заподіяння шкоди здоров'ю людини або її майну – з 16 років."
           image={img17}
           reverse={false}
         />
@@ -59,7 +59,7 @@ const PartTwo = () => {
         {isShowNext ? (
           <>
             <LawCardMobile
-              title="Увага!"
+              title="Заборонено!"
               body="Умертвляти тварин шляхом утоплення, задушення, використання електричного струму та отрути."
               image={img18}
               reverse={true}
@@ -77,7 +77,7 @@ const PartTwo = () => {
               reverse={true}
             />
             <LawCardMobile
-              title="Заборонено!"
+              title="Увага!"
               body="Заборонено зменшення заповідних зон та забезпечення перекриття їх шлагбаумами."
               image={img21}
               reverse={false}
@@ -85,7 +85,7 @@ const PartTwo = () => {
             <LawCardMobile
               title="Заборонено!"
               body="Надавати фотопослуги 
-								з дикими тваринами."
+							з дикими тваринами."
               image={img22}
               reverse={true}
             />
@@ -135,7 +135,7 @@ const PartTwo = () => {
         <LawCardDesktop
           className="items-end justify-end"
           image={img21}
-          title="Заборонено!"
+          title="Увага!"
           body="Заборонено зменшення заповідних зон та забезпечення перекриття їх шлагбаумами."
         />
         <LawCardDesktop
@@ -181,19 +181,19 @@ const PartTwo = () => {
         <LawCardDesktop
           className="items-center justify-start"
           image={img28}
-          title="Увага!"
-          body="Виключено умертвіння тимчасово ізольованих  безпритульних домашніх тварин."
+          title="Заборонено!"
+          body="Виключено умертвіння тимчасово ізольованих безпритульних домашніх тварин."
         />
         <LawCardDesktop
           className="items-center justify-start"
           image={img29}
-          title="Заборонено!"
+          title="Увага!"
           body="Поводок тварин на прив'язі – не менше 20 метрів, для сторожових собак – не менше 10 метрів."
         />
         <LawCardDesktop
           className="items-center justify-start"
           image={img30}
-          title="Увага!"
+          title="Заборонено!"
           body="Залишати тварину без можливості укриття в приміщенні при температурі повітря більше ніж +20 °C або менше ніж 0 °C."
         />
         <LawCardDesktop
@@ -206,18 +206,18 @@ const PartTwo = () => {
           className="items-start justify-end"
           image={img32}
           title="Увага!"
-          body="Захищено права домашніх тварин:"
+          body="Законодавчо захищено права домашніх, вуличних, безпритульних і свійських тварин"
         />
         <LawCardDesktop
           className="items-start justify-end"
           image={img33}
-          title="Заборонено!"
-          body="Місцеві ради тепер також повинні  не допускати діяльності пересувних виставок та зоопарків, іншої забороненої діяльності, а також встановлюють перелік тварин, які потребують охорони на їх території."
+          title="Увага!"
+          body="Місцеві ради тепер також повинні не допускати діяльності пересувних виставок та зоопарків, іншої забороненої діяльності, а також встановлюють перелік тварин, які потребують охорони на їх території."
         />
         <LawCardDesktop
           className="items-start justify-end"
           image={img34}
-          title="Увага!"
+          title="Заборонено!"
           body="Прив'язувати тварин до
 					машин/мотоциклів 
 					та примушувати до бігу.
@@ -227,12 +227,12 @@ const PartTwo = () => {
           className="items-start justify-end"
           image={img35}
           title="Увага!"
-          body="Адміністративна відповідальність  за неприбирання власником тварини її екскрементів під час перебування тварини у громадському місці."
+          body="Адміністративна відповідальність за неприбирання власником тварини її екскрементів під час перебування тварини у громадському місці."
         />
         <LawCardDesktop
           className="items-start justify-end"
           image={img36}
-          title="Увага!"
+          title="Заборонено!"
           body="Жебракування з тваринами,
 					в т.ч. безпритульними."
         />
