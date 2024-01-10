@@ -78,7 +78,7 @@ const HeaderDesktop = () => {
 					</Link>
 				</li> */}
       </ul>
-      <ButtonDonate className="btn btn-orange rounded-[20px] h-[30px] text-sm leading-[13px] md:text-[18px] md:h-[44px]  md:leading-[20px]" />
+      <ButtonDonate className="btn btn-orange cursor-pointer rounded-[20px] h-[30px] text-sm leading-[13px] md:text-[18px] md:h-[44px]  md:leading-[20px]" />
       {/* <button className="py-2.5 px-4 bg-orange rounded-[20px] duration-200 hover:shadow-[0px_4px_4px_0px_rgba(0,0,0,0.10)] hover:bg-orangeHover text-[11px] lg:text-[18px]">
         Підтримати проєкт
       </button> */}
