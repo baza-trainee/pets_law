@@ -25,10 +25,10 @@ const HeaderMobile = ({ toggleMobile }) => {
   return (
     <nav
       id="mobile_menu"
-      className="absolute top-[100%] overflow-y-visible bg-lightBlack/[.6] left-0 z-20 w-full h-screen"
+      className="header-mobile"
     >
-      <div className=" h-full overflow w-[90%] mx-auto">
-        <ul className="relative pb-[90px] mx-auto">
+      <div className="container">
+        <ul className="header-mobile__list">
           <ListItem
             onClick={toggleMobile}
             link="hero"
@@ -40,8 +40,8 @@ const HeaderMobile = ({ toggleMobile }) => {
             link="about"
             text="Про нас"
           />
-          <li className="mx-auto my-[30px]">
-            <a onClick={toggleDropDownMenu} className="btn btn-white h-[42px] ">
+          <li className="list__item">
+            <a onClick={toggleDropDownMenu} className="btn btn-white h-[42px]">
               Права тварин
               <IconArrow isOpen={isOpen} />
             </a>
@@ -70,7 +70,7 @@ const HeaderMobile = ({ toggleMobile }) => {
 
           <ListItem onClick={toggleMobile} link="partners" text="Партнери" />
           
-          <ButtonDonate className='w-full cursor-pointer btn btn-orange' />
+          <ButtonDonate className='w-full h-[44px] cursor-pointer btn btn-orange' />
         </ul>
       </div>
     </nav>
@@ -79,7 +79,7 @@ const HeaderMobile = ({ toggleMobile }) => {
 
 const ListItem = ({ text, link, onClick }) => {
   return (
-    <li onClick={onClick} id="nav-list-item" className="mx-auto my-[30px]">
+    <li onClick={onClick} id="nav-list-item" className="list__item">
       <Link to={link} className="btn btn-white h-[42px] ">
         {text}
       </Link>
