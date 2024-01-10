@@ -11,8 +11,8 @@ const Hero = () => {
         </p>
       </div>
       <div className="text-white bg-yellow lg:px-14 lg:py-10 max-w-[830px] lg:rounded-3xl flex gap-10 flex-col items-center absolute lg:right-[10%] lg:top-[68%] px-4 py-5 rounded-l-2xl right-0 ml-[10%] -bottom-5 lg:bottom-auto">
-        <h1 className="lg:text-6xl max-w-[630px] text-xl">
-          Зоозахисний закон: які нововведення вступають у силу
+        <h1 className="lg:text-6xl max-w-[700px] text-xl">
+          <span className="whitespace-nowrap">Зоозахисний закон 3251:</span> які нововведення вступають у силу
         </h1>
         <p className="hidden text-2xl lg:block">
           Що саме змінює цей закон? <br />

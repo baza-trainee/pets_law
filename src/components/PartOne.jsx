@@ -28,11 +28,11 @@ const PartOne = () => {
   return (
     <section id="part_1" className="relative flex-col mt-[60px] xl:mt-[120px] mb-[20px] mx-2">
       <img className="hidden md:block absolute left-[-30px]  lg:left-[0px] top-[-20px] w-[300px] h-[100px] xl:top-[-110px] xl:left-[-100px] xl:w-auto xl:h-auto 2xl:left-[0px]" src={title} alt="Права тварин" />
-      <img className="block md:hidden w-full" src={titleMob} alt="Права тварин" />
+      <img className="block w-full md:hidden" src={titleMob} alt="Права тварин" />
       <div className="md:hidden">
         <LawCardMobile
           title="Увага!"
-          body="Жорстоким поводженням тепер вважається  не тільки  порушення правил утримання тварин,  а й інші порушення правил поводження з тваринами та порушення правил транспортування тварин."
+          body="Жорстоким поводженням тепер вважається  не тільки  порушення правил утримання тварин, а й інші порушення правил поводження з тваринами та порушення правил транспортування тварин."
           image={img1}
           reverse={false}
         />
@@ -44,15 +44,15 @@ const PartOne = () => {
         />
         <LawCardMobile
           title="Увага!"
-          body="Особа, яка супроводжує домашню тварину, зобов'язана  тепер забезпечити наявність повідка, якщо тварина може становити небезпеку для життя чи здоров’я людини, а також намордника на собаках небезпечних порід. "
+          body="Особа, яка супроводжує домашню тварину, зобов'язана тепер забезпечити наявність повідка, якщо тварина може становити небезпеку для життя чи здоров’я людини, а також намордника на собаках небезпечних порід."
           image={img3}
           reverse={false}
         />
         <LawCardMobile
           title="Увага!"
           body="Особа, яка супроводжує тварину, зобов'язана тепер забезпечити наявність на домашній 
-				тварині нашийника з 
-				позначками-ідентифікаторами."
+				  тварині нашийника з 
+				  позначками-ідентифікаторами."
           image={img4}
           reverse={true}
         />
@@ -61,7 +61,7 @@ const PartOne = () => {
             <LawCardMobile
               title="Заборонено!"
               body="Дресирувати тварин 
-								у жорстокий спосіб."
+							у жорстокий спосіб."
               image={img5}
               reverse={false}
             />
@@ -78,7 +78,7 @@ const PartOne = () => {
               reverse={false}
             />
             <LawCardMobile
-              title="Увага!"
+              title="Заборонено!"
               body="Пропаганда жорстокого поводження з тваринами."
               image={img8}
               reverse={true}
@@ -91,12 +91,12 @@ const PartOne = () => {
             />
             <LawCardMobile
               title="Заборонено!"
-              body="Пропаганда жорстокого поводження з тваринами."
+              body="Залишати тварину в закритому салоні автомобіля за відсутності в ньому людини при температурі повітря більше ніж +20 °C та менше ніж +5 °C."
               image={img10}
               reverse={true}
             />
             <LawCardMobile
-              title="Заборонено!"
+              title="Увага!"
               body="Забороняється регулювання чисельності тварин біологічно обґрунтованими методами і методами евтаназії. Лише гуманні методи (біостерилізація, влаштування у притулок,тощо)."
               image={img11}
               reverse={false}
@@ -161,8 +161,7 @@ const PartOne = () => {
           image={img4}
           title="Увага!"
           body="Особа, яка супроводжує тварину, зобов'язана тепер забезпечити наявність на домашній 
-					тварині нашийника з 
-					позначками-ідентифікаторами. "
+					тварині нашийника."
         />
         <LawCardDesktop
           className="items-end justify-end"
@@ -175,7 +174,7 @@ const PartOne = () => {
         <LawCardDesktop
           className="items-end justify-end"
           image={img6}
-          title="Увага!"
+          title="Заборонено!"
           body="Дресирувати тварин 
 					у жорстокий спосіб."
         />
@@ -194,19 +193,19 @@ const PartOne = () => {
         <LawCardDesktop
           className="items-center justify-start"
           image={img9}
-          title="Увага!"
+          title="Заборонено!"
           body="Пропаганда жорстокого поводження з тваринами."
         />
         <LawCardDesktop
           className="items-center justify-start"
           image={img10}
-          title="Увага!"
+          title="Заборонено!"
           body="Залишати тварину в закритому салоні автомобіля за відсутності в ньому людини при температурі повітря більше ніж +20 °C та менше ніж +5 °C."
         />
         <LawCardDesktop
           className="items-center justify-start"
           image={img11}
-          title="Увага!"
+          title="Заборонено!"
           body="Пропаганда жорстокого поводження з тваринами."
         />
         <LawCardDesktop
@@ -236,7 +235,7 @@ const PartOne = () => {
         <LawCardDesktop
           className="items-start justify-end"
           image={img16}
-          title="Увага!"
+          title="Заборонено!"
           body="Насильницькі дії стосовно тварин, спрямовані на задоволення статевої пристрасті 
 					стало злочином, а не адмін правопорушенням."
         />
