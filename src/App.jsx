@@ -3,7 +3,7 @@ import About from "./components/About";
 import Error from "./components/Error";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
+import Hero from "./components/Hero/Hero";
 import PartOne from "./components/PartOne";
 import PartTwo from "./components/PartTwo";
 import RedBlock from "./components/RedBlock";
