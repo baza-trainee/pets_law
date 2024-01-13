@@ -13,7 +13,7 @@ const LawCardMobile = ({ title, body, image, reverse }) => {
                         </svg>
                     </div>
                     
-                    <h3 className=" grow text-center text-[25px] font-inter decoration-solid decoration-black underline">{title}</h3>
+                    <h3 className=" grow text-center text-[18px] sm:text-[25px] font-inter decoration-solid decoration-black underline">{title}</h3>
                 </div>
                 <div>
                     <p className="text-[16px] text-start font-inter">{body}</p>

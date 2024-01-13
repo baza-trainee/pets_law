@@ -2,7 +2,7 @@ import arrow from "../../assets/images/stories/arrow.svg";
 const Card = ({ title, body, image, link }) => {
     return (
         <article className="md:!flex md:!justify-center pl-0 pr-3 xs:px-3">
-            <div className="flex flex-col px-5 bg-yellowBg md:bg-white py-7 rounded-3xl w-[240px] xs:w-[330px] xl:w-[417px] h-[682px] md:h-[554px]">
+            <div className="flex flex-col px-5 bg-yellowBg md:bg-white py-7 rounded-3xl w-[240px] xs:w-[330px] xl:w-[417px] h-[554px]">
                 <h4 className="font-bold text-md sm:text-2xl">
                     {title}
                 </h4>
