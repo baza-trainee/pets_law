@@ -82,7 +82,7 @@ const About = () => {
 
       {/* Mobile */}
 
-      <div className="md:hidden block w-full h-[670px] max-w-full bg-about bg-cover bg-no-repeat position_right_90 position_bottom_75px">
+      <div className="md:hidden block w-full h-[850px] max-w-full bg-about bg-cover bg-no-repeat position_right_90 position_bottom_75px">
         <div className="bg-none block z-9 w-[100%] h-[16%] px-[20px] py-[20px]">
           <p className="text-black items-center font-inter text-[14px] not-italic font-normal leading-[17px]">
             Багато людей знають, що володіння домашньою твариною може бути
@@ -94,8 +94,8 @@ const About = () => {
         <div className="bg-none block w-[100%] h-[72%] z-20">
           <div className="absolute bottom-0 right-0 w-[390px] h-[546px]">
           </div>
-          <div className="absolute bg-white w-[38%] h-[10%] rounded-[10px] top-[18%] left-[58%] p-2.5 z-9">
-            <p className="text-black items-center text-[14px] not-italic font-normal font-inter leading-[17px]">
+          <div className="absolute flex justify-center items-center bg-white w-[38%] h-[10%] rounded-[10px] top-[18%] left-[58%] p-2.5 z-9">
+            <p className="relative w-full text-black items-center text-[14px] not-italic font-normal font-inter leading-[17px] break-words xs:break-normal">
               Ось чотири самих розповсюджених
             </p>
           </div>
