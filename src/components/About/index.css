@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .about {
+       @apply relative block mx-auto bg-blue
+    }
+
+    .about_desk {
+        @apply hidden relative md:block mx-auto max-w-[1920px] min-h-[992px] bg-cover md:position_right_80 lg:bg-right
+    }
+
+    .about_desk__paw {
+        @apply relative float-right bottom-0 right-0 w-[711px] h-[992px]
+    }
+
+    .about_desk__paw img {
+        @apply hidden xl:block z-10 md:mt-[40px] 2xl:mr-[50px] md:mr-[80px] relative float-right  2xl:w-[38%] 2xl:h-[27%] md:w-[32%] md:h-[23%]
+    }
+    .about_desk__card-1 {
+        @apply sm:bg-none absolute z-10 lg:w-[40%] md:w-[50%] sm:w-[85%] block md:bg-white lg:min-h-[16%] rounded-[30px] px-[30px] py-[20px] 2xl:top-[9%] sm:top-[5%] 2xl:left-[31%] sm:left-[7%]
+    }
+
+    .about_desk__card-1 p {
+        @apply text-black items-center font-[inter] 2xl:text-[25px] md:text-[22px] sm:text-[20px] not-italic font-normal 2xl:leading-[30px] sm:leading-[25px] 
+    }
+
+    .about_desk__card-2 {
+        @apply absolute bg-white lg:w-[263px] lg:min-h-[10%] sm:min-h-[8%] md:w-[240px] sm:w-[220px] rounded-[30px] 2xl:top-[32%] xl:top-[20%] md:top-[12%] sm:top-[22%] 2xl:left-[63%] xl:left-[55%] sm:left-[63%] p-5 z-10
+    }
+
+    .about_desk__card-2 p {
+        @apply text-black items-center lg:text-[25px] md:text-[22px] sm:text-[20px] not-italic font-normal font-[inter] lg:leading-[30px] sm:leading-[25px]
+    }
+
+    .about_desk__card-3 {
+        @apply absolute bg-white lg:w-[263px] lg:min-h-[10%] sm:min-h-[8%] md:w-[240px] sm:w-[220px] rounded-[30px] 2xl:top-[32%] xl:top-[20%] md:top-[12%] sm:top-[22%] 2xl:left-[63%] xl:left-[55%] sm:left-[63%] p-5 z-10
+    }
+
+    .about_desk__card-3 p {
+        @apply 
+    }
+
+    .about_desk__card-4 {
+        @apply absolute bg-white lg:w-[263px] lg:min-h-[10%] sm:min-h-[8%] md:w-[240px] sm:w-[220px] rounded-[30px] 2xl:top-[32%] xl:top-[20%] md:top-[12%] sm:top-[22%] 2xl:left-[63%] xl:left-[55%] sm:left-[63%] p-5 z-10
+    }
+
+    .about_desk__card-4 p {
+        @apply 
+    }
+
+    .about_desk__card-5 {
+        @apply absolute bg-white lg:w-[263px] lg:min-h-[10%] sm:min-h-[8%] md:w-[240px] sm:w-[220px] rounded-[30px] 2xl:top-[32%] xl:top-[20%] md:top-[12%] sm:top-[22%] 2xl:left-[63%] xl:left-[55%] sm:left-[63%] p-5 z-10
+    }
+
+    .about_desk__card-5 p {
+        @apply 
+    }
+
+    
+}
